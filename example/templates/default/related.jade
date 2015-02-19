@@ -1,0 +1,11 @@
+if (page.type == 'project')
+  hr
+  !=template('project-list')
+
+if (page.related)
+  h4 Related pages:
+  ul.sidelist
+    for relatedPage in page.related
+      li: a(href=relatedPage.url): !=relatedPage.title
+
+

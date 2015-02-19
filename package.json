@@ -1,0 +1,46 @@
+{
+  "name": "woods",
+  "bin": {
+    "woods": "bin/woods"
+  },
+  "version": "0.0.8",
+  "main": "index.js",
+  "dependencies": {
+    "async": "~0.2.6",
+    "express": "~3.5.0",
+    "jade": "~1.3.0",
+    "node-watch": "~0.3.1",
+    "marked": "~0.3.2",
+    "mime": "~1.2.9",
+    "gm": "~1.8.2",
+    "commander": "~2.1.0",
+    "woods-parsedown": "0.0.4",
+    "mkdirp": "~0.3.5",
+    "needless": "~0.1.1",
+    "array": "~0.4.3",
+    "knox": "~0.8.9",
+    "slugg": "~0.1.1",
+    "natural-compare-lite": "~0.4.6",
+    "tiny-lr": "~0.0.5",
+    "superagent": "~0.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/studiomoniker/woods.git"
+  },
+  "author": {
+    "name": "Jonathan Puckey"
+  },
+  "license": "MIT",
+  "readme": "Woods\n=====\n\nNode.js file based CMS inspired by [Kirby](http://getkirby.com/) & [Stacey](http://www.staceyapp.com/).\n\nUsed amongst others for [paperjs.org](http://paperjs.org) (Source: [github.com/paperjs/paperjs.org](https://github.com/paperjs/paperjs.org))\n\n### Features\n\n*   Tree structure with parents and children defined by files and directories in your site directory\n*   No database\n*   Markdown content files where any new line starting with 'propertyname:' defines a property on the page\n*   Listens to file-system changes and rebuilds the site if needed\n*   [Live Reload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei): Automatically reloads the browser whenever you edit a content file, static asset or template\n*   Page type specific Jade templates\n*   Thumbnails: resizing, max width/height, cropping\n*   Image / file captions\n*   Pagination\n*   Express web server for local testing or actual serving of content\n*   Sync site to S3 bucket\n*\tExport site to directory\n*\tBasic multi-language support\n\n### Todo\n\n*   Tests\n*   FTP syncing\n\n### Requirements\n\nWoods requires Graphics Magick to be installed on your system: http://www.graphicsmagick.org/\n\n### Installation\n\n    npm install woods -g\n    woods\n\nThen point your browser to: \n[http://localhost:3000/](http://localhost:3000/)\n\n### Usage\n\n    Usage: woods [directory]\n    \n    Options:\n    \n      -h, --help                output usage information\n      -V, --version             output the version number\n      -p, --port [3000]         The server port\n      -s, --sync                Sync site to s3\n      -e, --export [directory]  Export site to directory\n\n(Don't forget to turn on your [Live Reload plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) while editing)\n\n\n## License\nThis project is licensed under the [MIT license](http://opensource.org/licenses/MIT).\n",
+  "readmeFilename": "README.md",
+  "description": "Woods =====",
+  "bugs": {
+    "url": "https://github.com/studiomoniker/woods/issues"
+  },
+  "homepage": "https://github.com/studiomoniker/woods",
+  "_id": "woods@0.0.8",
+  "scripts": {},
+  "_shasum": "58f9472d93686baf4afbd097dd06735abe8f21ac",
+  "_from": "woods@"
+}

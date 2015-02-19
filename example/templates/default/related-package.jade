@@ -1,0 +1,8 @@
+h4: b !{page.type == 'package' ? 'Other Packages:' : 'Other Packages:'}
+ul.sidelist
+  for child in page.get('/references').children
+    if isActive(child)
+      li: a.active(href=child.url) #{child.title}
+    else
+      li: a(href=child.url) #{child.title}
+
