@@ -1,2 +1,2 @@
-# ketaiLibrary.org
-The source of the ketaiLibrary.org website
+# library.org
+The source of the ketai.org reference website
