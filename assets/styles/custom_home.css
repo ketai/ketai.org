@@ -1,0 +1,183 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+
+@font-face {
+  font-family: 'mercedes';
+  src: url("../fonts/2D9964_0_0.ttf"); /* IE9 Compat Modes */
+  src: url('../fonts/2D9964_0_0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/2D9964_0_0.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/2D9964_0_0.ttf')  format('truetype') /* Safari, Android, iOS */      
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background: fixed center center no-repeat;
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	
+}
+#wrapper{
+	top: 50%;
+	margin-top: -15%;
+}
+.col{margin-top: 0%;}
+.maincontent{
+	width: 80%;
+	max-width: inherit;
+	padding: inherit;
+}
+.menubar{
+	color: #fff;
+	border-right: solid 2px #fff;
+	box-sizing: border-box;
+	margin-top: 20px;
+	/*padding-left: 20px;*/
+	padding: 0px 20px;
+	/*position: fixed;*/
+}
+
+.menubar a, a:visited {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+}
+.menu .current{
+	font-weight: 900;
+}.menu a, a:visited {
+	/*color: #000;*/
+	text-decoration: none;
+	outline: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+	/*font-style: italic;*/
+}
+.menu .misc_link{
+	font-size: 1.7em !important;
+}
+.menu .current{
+	font-weight: 500;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+	float: right;
+}
+li{
+	padding: 6px 5px;
+	text-align: left;
+}
+h3{
+	/*padding: 0 20px;*/
+	margin-top: 0px;
+	font-size: 4.75em;
+}
+.tagline h1{
+	margin: 0;
+	font-size: 7em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	color: #fff;
+	line-height: .9;
+
+}
+.tagline a, a:visited {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	/*font-size: 2em;*/
+}
+.tagline a:hover {
+color: #333;
+border-bottom: 1px solid #333;
+}
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 5em;
+	line-height: 1.1;
+	margin-top: .25em;
+}
+.menu-wrap {
+	background: #0F192A;
+}
+h4{
+	color: #fff;
+	font-family: 'roboto', sans-serif; 
+	font-weight: 300;
+	font-size: 1.6em;
+	line-height: 1.2em;
+}
+@media only screen and (max-width: 720px) {
+	#wrapper {
+			margin-top: inherit;
+		/*padding-top: 20px;*/
+		top:inherit;
+		}
+	.icon-list a, a:visited {
+		font-size: 1.3em;
+	}
+	.tagline{
+		margin-left: 35px;
+		width: 100%;
+	}
+	.maincontent{
+		padding-top: 50px;
+	}
+	
+}
+@media only screen and (min-width:720px) and (max-width:1024px) {
+	#wrapper{
+		margin-top: inherit;
+		top:inherit;
+	}
+	.maincontent{
+		padding-top: 50px;
+		padding: 20px;
+	}
+	.span_2_of_8 {
+		width: 30%;
+	}
+	.span_5_of_8 {
+		width: 61.9%;
+		padding-left: 20px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#wrapper{
+		margin-top: inherit;
+		top:inherit;
+	}
+	.section{
+		padding: 15px;
+	}
+	.menu-button{
+		margin: 0px;
+	}
+	.maincontent{
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+	.tagline{
+		margin-left: inherit;
+	}
+
+	.tagline h1{
+		font-size: 6em;
+	}
+	h2{
+		font-size: 4em;
+	}
+	.menu .misc_link{
+	font-size: 1.3em !important;
+	}
+}

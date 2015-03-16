@@ -1,0 +1,12 @@
+ul.menu
+  li: a(href="/") Home
+  for child in page.children
+    if isActive(child)
+      li: a.current(href=child.url) #{child.title}
+    else
+      li: a(href=child.url) #{child.title}
+  br
+  br
+  li: a.misc_link(href="https://github.com/ketai/library"): i.fa.fa-github  Github
+  li: a.misc_link(href="https://github.com/ketai/ketaiLibrary.org/issues"): i.fa.fa-comment-o  Forum
+  li: a.misc_link(href="https://twitter.com/ketailibrary"): i.fa.fa-twitter  Twitter

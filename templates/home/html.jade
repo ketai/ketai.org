@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    meta(name="description", content=page.description)
+   
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/styles/html5reset.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/responsivegridsystem.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/col.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/2cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/3cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/4cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/5cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/6cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/7cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/8cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/9cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/10cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/11cols.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/12cols.css" media="all">
+
+    <!-- Responsive Stylesheets -->
+    <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/assets/styles/1024.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/assets/styles/768.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="/assets/styles/480.css">
+
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+    <script src="/assets/scripts/modernizr-2.5.3-min.js"></script>
+    //- <link rel="stylesheet" type="text/css" href="/assets/styles/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/menu_sideslide.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    link(rel="stylesheet", href="/assets/styles/custom_home.css")
+    
+    title Ketai Library - #{page.title}
+body
+  !=template('side_menu', root)
+  #wrapper
+    #maincontentcontainer
+      div.maincontent
+        div.section.group
+          div.col.span_2_of_8.menubar
+            !=template('menu', root)
+          div.col.span_5_of_8.tagline
+            !=template('body')
+
+  
+  <script src="/assets/scripts/classie.js"></script>
+  <script src="/assets/scripts/menu.js"></script>
