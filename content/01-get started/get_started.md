@@ -1,6 +1,7 @@
 ---
 title: Get Started
 ---
+
 ####What You Need
 To use the library for Processing, make sure your setup meets the following minimum requirements:- <br>
 1. **[<i class="fa fa-download"></i> Processing 3.0 (current pre-release is 3.0a5)](https://processing.org/download/ "Download Processing")**
@@ -11,7 +12,7 @@ To use the library for Processing, make sure your setup meets the following mini
 
 The newer versions of the requirements will be fine. 
 
-
+<hr>
 ####Steps
 1. Install Android SDK. Follow the steps outlined in Processing Android Wiki at **[http://wiki.processing.org/w/Android#Instructions](http://wiki.processing.org/w/Android#Instructions)**
 
@@ -23,6 +24,7 @@ The newer versions of the requirements will be fine.
 
 5. Android OS might sometimes have dependecies specific to your system setup. To install Windows USB Driver, **[click here](http://developer.android.com/tools/extras/oem-usb.html)**. To setup your device for Linux, follow the instructions **[here](http://developer.android.com/tools/device.html#setting-up).**
 
+<hr>
 #### Write your first sketch
 1. Launch Processing application. Once it launches an empty sketch window, switch to Android Mode
 
@@ -39,7 +41,7 @@ The newer versions of the requirements will be fine.
 
 4. Plug your device into your Desktop and run the sketch from Processing. Your sketch should run on the Android Device.
 
-
+<hr>
 ####Documentation
 The following book includes a comprehensive introduction to the ke:tai library with more than 40 projects.
 
