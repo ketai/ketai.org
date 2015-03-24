@@ -35,3 +35,8 @@ Then point your browser to:
         brew install graphicsmagick
 
 The directory to locate the files for Woods : /usr/local/lib/node_modules/woods
+By default the content is located in the example subfolder
+
+To export static HTML Pages: 
+
+		woods -e /specify/the/path/of/your/folder
