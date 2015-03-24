@@ -35,7 +35,7 @@
 }
 
 .menubar ul.menu {
-    margin-top: 170px;
+    margin-top: 155px;
 }
 
 p {
@@ -57,14 +57,13 @@ p {
 }
 
 .menubar {
-    border-right: solid 1px #C3C3C3;
+    border-right: solid 1px #EAEAEA;
     box-sizing: border-box;
     margin-top: 20px;
-    /*padding-left: 20px;*/
-    
-    padding: 0px 10px;
+    /* padding-left: 20px; */
+    padding: 0px 20px;
     position: fixed;
-    width: 195px;
+    width: 190px;
 }
 
 h1 {
@@ -161,8 +160,9 @@ a:visited {
 }
 
 .reference a:hover {
-    color: #222;
-    background: #33DC4F;
+    color: #fff;
+    background : #008bbb;
+    padding: 3px;
     /*font-weight: bold;*/
 }
 

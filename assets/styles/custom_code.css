@@ -15,7 +15,8 @@
 	margin-bottom: 20px;
 }
 .sidelist a{
-	
+	padding: 4px;
+	margin-left: -4px;
 }
 .sidelist li{
 	font-size: 2em !important;
