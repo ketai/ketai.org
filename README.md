@@ -24,8 +24,10 @@ Then point your browser to:
 1. Install Homebrew : [Instructions](http://brew.sh/)
 
 		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		brew update
+
 2. Install Node 
-3
+
         brew install node
 
 3. Install [GraphicsMagick](http://www.graphicsmagick.org/README.html)
