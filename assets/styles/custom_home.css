@@ -30,9 +30,9 @@ body{
 }
 .menubar{
 	color: #fff;
-	border-right: solid 2px #fff;
+	/*border-right: solid 1px #fff;*/
 	box-sizing: border-box;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	/*padding-left: 20px;*/
 	padding: 0px 20px;
 	/*position: fixed;*/
@@ -82,9 +82,10 @@ h3{
 	margin: 0;
 	font-size: 7em;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 900;
+	font-weight: 100;
 	color: #fff;
 	line-height: .9;
+	letter-spacing: -3px;
 
 }
 .tagline a, a:visited {
@@ -92,7 +93,7 @@ h3{
 	text-decoration: none;
 	outline: 0;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	/*font-size: 2em;*/
 }
 .tagline a:hover {
@@ -114,6 +115,13 @@ h4{
 	font-family: 'roboto', sans-serif; 
 	font-weight: 300;
 	font-size: 1.6em;
+	line-height: 1.2em;
+}
+h3{
+	color: #fff;
+	font-family: 'roboto', sans-serif; 
+	font-weight: 100;
+	font-size: 2em;
 	line-height: 1.2em;
 }
 @media only screen and (max-width: 720px) {

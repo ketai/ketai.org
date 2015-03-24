@@ -1,0 +1,95 @@
+doctype html
+html(lang='en')
+  head
+    meta(name="description", content=page.description)
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/styles/html5reset.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/responsivegridsystem.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/6cols.css" media="all">
+
+    <!-- Responsive Stylesheets -->
+    <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/assets/styles/1024.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/assets/styles/768.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="/assets/styles/480.css">
+
+
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+    <script src="/assets/scripts/modernizr-2.5.3-min.js"></script>
+    //- <link rel="stylesheet" type="text/css" href="/assets/styles/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/menu_sideslide.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/styles/code_block.css" />
+    
+    //- link(rel="stylesheet", href="/assets/lib/codemirror.css")
+    //- link(rel="stylesheet", href="/assets/theme/midnight.css")
+    //- script(type='text/javascript', src='/assets/lib/codemirror.js')
+    //- script(type='text/javascript', src='/assets/mode/javascript/javascript.js')
+    //- script(type='text/javascript', src='/assets/addon/selection/active-line.js')
+    //- script(type='text/javascript', src='/assets/addon/edit/matchbrackets.js')
+    
+    link(rel="stylesheet", href="/assets/styles/code_example.css")
+
+    title Ketai Library - #{page.title}
+body
+  !=template('side_menu', root)
+  #wrapper
+    div.title: h2 Ketai
+    #maincontentcontainer
+      div.maincontent
+        div.section.group
+          div.col.span_1_of_6.menubar
+            a(href="/")
+              img.top(src= "/assets/images/ketai_black.png")
+              img.bottom(src= "/assets/images/ketai_v10.png")
+            !=template('menu', root)
+            hr
+            !=template('example-list')
+          div.col.span_4_of_6.reference
+            h3 Examples
+            !=template('body')
+  
+  <script src="//cdn.jsdelivr.net/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+
+  //- script(type='text/javascript').
+  //-     var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+  //-       mode: 'javascript',
+  //-       lineNumbers: true,
+  //-       styleActiveLine: true,
+  //-       matchBrackets: true
+  //-     });
+  //-     editor.setOption("theme", "midnight");
+      
+  //-     var editor = CodeMirror.fromTextArea(document.getElementById("inline1"), {
+  //-       mode: 'javascript',
+  //-       lineNumbers: true,
+  //-       styleActiveLine: true,
+  //-       matchBrackets: true
+  //-     });
+  //-     editor.setOption("theme", "midnight");
+
+  //-     var editor = CodeMirror.fromTextArea(document.getElementById("inline2"), {
+  //-       mode: 'javascript',
+  //-       lineNumbers: true,
+  //-       styleActiveLine: true,
+  //-       matchBrackets: true
+  //-     });
+  //-     editor.setOption("theme", "midnight");
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/assets/scripts/jquery-1.7.2.min.js"><\/script>')</script>
+        
+  <script src="/assets/scripts/classie.js"></script>
+  <script src="/assets/scripts/menu.js"></script>
+  <script src="/assets/scripts/responsivegridsystem.js"></script>

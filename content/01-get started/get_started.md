@@ -3,17 +3,21 @@ title: Get Started
 ---
 ####What You Need
 To use the library for Processing, make sure your setup meets the following minimum requirements:- <br>
-• **[Processing 3.0 (current pre-release is 3.0a5) <i class="fa fa-download"></i>](https://processing.org/download/)<br>**
-• **[Java 1.7 (or “Java 7”)  <i class="fa fa-download"></i>](http://java.com/en/download/)<br>**
-• **[Android 4.0 Ice Cream Sandwich](http://developer.android.com/sdk/index.html#Other) <br>**
+1. **[<i class="fa fa-download"></i> Processing 3.0 (current pre-release is 3.0a5)](https://processing.org/download/ "Download Processing")**
+
+2. **[<i class="fa fa-download"></i> Java 1.7 (or “Java 7”)](http://java.com/en/download/ "Download Java 1.7")**
+
+3. **[ Android 4.0 Ice Cream Sandwich](http://developer.android.com/sdk/index.html#Other "Android 4.0")**
+
 The newer versions of the requirements will be fine. 
+
 
 ####Steps
 1. Install Android SDK. Follow the steps outlined in Processing Android Wiki at **[http://wiki.processing.org/w/Android#Instructions](http://wiki.processing.org/w/Android#Instructions)**
 
-2. Check your device's Android Version. Accordingly, determine the Ketai library version you need to use. (Ketai version for Ice Cream Sandwich 4.0 or Jelly Bean 4.1, vs. Ketai for Gingerbread 2.33 or Honeycomb 3.0)
+2. Check your device's Android Version. Accordingly, determine the ke:tai library version you need to use. (ke:tai version for Ice Cream Sandwich 4.0 or Jelly Bean 4.1, vs. ke:tai for Gingerbread 2.33 or Honeycomb 3.0)
 
-3. If you have Android versions 4.0 or higher, you can install the library release from within Processing IDE. Go to Sketch-> Add Library -> Import Library and search for "Ketai". Select the library and click on install.
+3. If you have Android versions 4.0 or higher, you can install the library release from within Processing IDE. Go to Sketch <i class="fa fa-long-arrow-right"></i>Add Library <i class="fa fa-long-arrow-right"></i>Import Library and search for "Ketai". Select the library and click on install.
 
 4. In Processing IDE, choose "Add mode" from the menu to install Android mode.
 
@@ -37,7 +41,7 @@ The newer versions of the requirements will be fine.
 
 
 ####Documentation
-The following book includes a comprehensive introduction to the Ketai library with more than 40 projects.
+The following book includes a comprehensive introduction to the ke:tai library with more than 40 projects.
 
 The book comes with project source code, and is available at the **[The Pragmatic Bookshelf](https://pragprog.com/book/dsproc/rapid-android-development)**
 

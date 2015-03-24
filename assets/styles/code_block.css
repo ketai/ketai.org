@@ -1,26 +1,27 @@
-/*
-XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
-*/
-
 .hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #fff;
-  color: black;
-  -webkit-text-size-adjust: none;
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #fff;
+    color: black;
+    -webkit-text-size-adjust: none;
 }
 
 .hljs-comment,
 .hljs-javadoc {
-  color: #006a00;
+    color: #006a00;
 }
 
 .hljs-keyword,
 .hljs-literal,
 .nginx .hljs-title {
-  color: #aa0d91;
+    /*color: #aa0d91;*/
+    /*color: #509991;*/
+    color: #3A7C6D;
+
+    /*font-weight: 300;*/
 }
+
 .method,
 .hljs-list .hljs-title,
 .hljs-tag .hljs-title,
@@ -30,17 +31,19 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
 .http .hljs-title,
 .hljs-request,
 .hljs-status {
-  color: #008;
+    color: #008;
 }
 
 .hljs-envvar,
 .tex .hljs-special {
-  color: #660;
+    color: #660;
 }
 
 .hljs-string {
-  color: #c41a16;
+    /*color: #c41a16;*/
+    color: #A035D5;
 }
+
 .hljs-tag .hljs-value,
 .hljs-cdata,
 .hljs-filter .hljs-argument,
@@ -48,7 +51,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
 .apache .hljs-cbracket,
 .hljs-date,
 .hljs-regexp {
-  color: #080;
+    color: #080;
 }
 
 .hljs-sub .hljs-identifier,
@@ -67,7 +70,12 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
 .css .hljs-function,
 .hljs-function .hljs-title,
 .coffeescript .hljs-attribute {
-  color: #1c00cf;
+    /*color: #1c00cf;*/
+    
+    color: #0585BD;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: -0.05em;
 }
 
 .hljs-class .hljs-title,
@@ -85,72 +93,73 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
 .setting,
 .hljs-params,
 .clojure .hljs-attribute {
-  color: #5c2699;
+    color: #5c2699;
 }
 
 .hljs-variable {
- color: #3f6e74;
+    color: #3f6e74;
 }
+
 .css .hljs-tag,
 .hljs-rules .hljs-property,
 .hljs-pseudo,
 .hljs-subst {
-  color: #000;
+    color: #000;
 }
 
 .css .hljs-class,
 .css .hljs-id {
-  color: #9b703f;
+    color: #9b703f;
 }
 
 .hljs-value .hljs-important {
-  color: #ff7700;
-  font-weight: bold;
+    color: #ff7700;
+    font-weight: bold;
 }
 
 .hljs-rules .hljs-keyword {
-  color: #c5af75;
+    color: #c5af75;
 }
 
 .hljs-annotation,
 .apache .hljs-sqbracket,
 .nginx .hljs-built_in {
-  color: #9b859d;
+    color: #9b859d;
 }
 
 .hljs-preprocessor,
 .hljs-preprocessor *,
 .hljs-pragma {
-  color: #643820;
+    color: #643820;
 }
 
 .tex .hljs-formula {
-  background-color: #eee;
-  font-style: italic;
+    background-color: #eee;
+    font-style: italic;
 }
 
 .diff .hljs-header,
 .hljs-chunk {
-  color: #808080;
-  font-weight: bold;
+    color: #808080;
+    font-weight: bold;
 }
 
 .diff .hljs-change {
-  background-color: #bccff9;
+    background-color: #bccff9;
 }
 
 .hljs-addition {
-  background-color: #baeeba;
+    background-color: #baeeba;
 }
 
 .hljs-deletion {
-  background-color: #ffc8bd;
+    background-color: #ffc8bd;
 }
 
 .hljs-comment .hljs-yardoctag {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .method .hljs-id {
-  color: #000;
+    color: #000;
 }
