@@ -52,7 +52,7 @@ This example illustrates the use of NFC Read
       ketaiNFC.cancelWrite();
     }
 ---
-<div class="link">[<i class="fa fa-download fa-lg"></i> ActiveCode.pde](ActiveCode.pde)</div>
+<div class="link">[<i class="fa fa-download fa-lg"></i> ActivityCode.pde](ActivityCode.pde)</div>
 
     /*
       The following code allows the sketch to handle all NFC events
