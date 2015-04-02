@@ -22,8 +22,8 @@ The source of the ketai.org reference website built in [Woods]("https://github.c
 3. Install [GraphicsMagick](http://www.graphicsmagick.org/README.html)
 
         brew install graphicsmagick
----
 
+---
 
 ### Installing Woods in OSX
 Open terminal in OSX and enter the following command :
