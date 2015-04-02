@@ -8,19 +8,8 @@ The source of the ketai.org reference website built in [Woods]("https://github.c
 3. [Homebrew](http://brew.sh/)
 4. [GraphicsMagick](http://www.graphicsmagick.org/)
 
----
-### Installing Woods in OSX
-Open terminal in OSX and enter the following command :
 
-    npm install woods -g
-    woods
-*In case of an error, try adding "sudo" in front of the command to get administrator privileges
-Then point your browser to: 
-[http://localhost:3000/](http://localhost:3000/)
-
-
----
-### Installation
+### Installing Dependencies
 1. Install Homebrew : [Instructions](http://brew.sh/)
 
 		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -33,8 +22,18 @@ Then point your browser to:
 3. Install [GraphicsMagick](http://www.graphicsmagick.org/README.html)
 
         brew install graphicsmagick
+---
+### Installing Woods in OSX
+Open terminal in OSX and enter the following command :
 
-The directory to locate the files for Woods : /usr/local/lib/node_modules/woods
+    npm install woods -g
+    woods
+*In case of an error, try adding "sudo" in front of the command to get administrator privileges
+Then point your browser to: 
+[http://localhost:3000/](http://localhost:3000/)
+
+
+The directory to locate the files for Woods in OSX : /usr/local/lib/node_modules/woods
 
 By default the content is located in the example subfolder.
 
