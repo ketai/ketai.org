@@ -4,12 +4,22 @@ title: Get Started
 
 ####What You Need
 To use the library for Processing, make sure your setup meets the following minimum requirements:- <br>
-1. **[<i class="fa fa-download"></i> Processing 3.0 (current pre-release is 3.0a5)](https://processing.org/download/ "Download Processing")**
+<!-- <h4> -->
+<div class="sidelist">
+<ul>
+<li>
+- [<i class="fa fa-download"></i> Processing 3.0 ](https://processing.org/download/ "Download Processing (current pre-release is 3.0a5)")
+</li>
+<li>
+- [<i class="fa fa-download"></i> Java](http://java.com/en/download/ "Download Java 1.7")
+</li>
+<li>
+- [ Android ](http://developer.android.com/sdk/index.html#Other "Android 4.0 Ice Cream Sandwich")
+</li>
+</ul>
+</div>
 
-2. **[<i class="fa fa-download"></i> Java 1.7 (or “Java 7”)](http://java.com/en/download/ "Download Java 1.7")**
-
-3. **[ Android 4.0 Ice Cream Sandwich](http://developer.android.com/sdk/index.html#Other "Android 4.0")**
-
+<!-- </h4> -->
 The newer versions of the requirements will be fine. 
 
 <hr>

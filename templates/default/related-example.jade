@@ -1,0 +1,7 @@
+h4: b !{page.type == 'examples'  ? 'Examples:' : 'Other Examples:'}
+ul.sidelist_menu
+  for child in page.get('/examples').children
+    if isActive(child)
+      li: a.active(href=child.url) #{child.title}
+    else
+      li: a(href=child.url) #{child.title}

@@ -176,7 +176,7 @@ strong {
     color: #444;
     margin-bottom: 0.5em;
     line-height: 1.25;
-    border-bottom: 1px solid #008bbb;
+    /*border-bottom: 1px solid #008bbb;*/
 }
 
 hr {
@@ -225,10 +225,6 @@ sub {
 
 a {
     color: #000;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
     text-decoration: none;
 }
 

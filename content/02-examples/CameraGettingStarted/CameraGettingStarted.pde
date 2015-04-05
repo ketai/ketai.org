@@ -1,5 +1,5 @@
 /**
- * <p>Ketai Sensor Library for Android: http://KetaiProject.org</p>
+ * <p>Ketai Sensor Library for Android: http://ketai.org</p>
  *
  * <p>Ketai Camera Features:
  * <ul>

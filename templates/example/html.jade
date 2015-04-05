@@ -35,6 +35,7 @@ html(lang='en')
     //- script(type='text/javascript', src='/assets/addon/edit/matchbrackets.js')
     
     link(rel="stylesheet", href="/assets/styles/code_example.css")
+    
 
     title Ketai Library - #{page.title}
 body
@@ -50,12 +51,12 @@ body
               img.bottom(src= "/assets/images/ketai_v10.png")
             !=template('menu', root)
             hr
-            !=template('example-list')
+            !=template('related-example')
           div.col.span_4_of_6.reference
             h3 Examples
             !=template('body')
   
-  <script src="//cdn.jsdelivr.net/highlight.js/8.4/highlight.min.js"></script>
+  <script src="/assets/scripts/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   
   

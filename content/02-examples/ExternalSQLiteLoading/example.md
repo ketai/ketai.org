@@ -7,12 +7,14 @@ date: 02/01/2015
 
 This example illustrates how to load a pre-built database file so that it may be used in an android sketch.  
 
-Datasets come from : <br>
-(large)  - http://chinookdatabase.codeplex.com/<br>
+Datasets come from : <br/>
+(large)  - http://chinookdatabase.codeplex.com/<br/>
 (small)  - http://www.gaia-gis.it/spatialite-2.3.1/resources.html
-
-Download and copy to 'data' folder of the sketch : <br><br>
+<br/><br/>
+Download and copy to 'data' folder of the sketch : <br>
 <div class="link">[<i class="fa fa-download fa-lg"></i> large.sqlite](data/large.sqlite)
+
+<br>
 [<i class="fa fa-download fa-lg"></i> sample.sqlite](data/sample.sqlite)<br></div>
 
 ---

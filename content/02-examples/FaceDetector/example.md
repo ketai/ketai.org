@@ -5,15 +5,15 @@ date: 02/01/2015
 ---
 #### Face Detector
 
-Facedetector provides a face detector on android:<br>
-&nbsp;- Wraps android face detection<br>
-&nbsp;- Makes it available to any PImage<br>
+Facedetector provides a face detector on android:<br/>
+&nbsp;- Wraps android face detection<br/>
+&nbsp;- Makes it available to any PImage<br/>
+<br/>
 
+Download and copy to 'data' folder of the sketch : <br/>
+<div class="link">[<i class="fa fa-download fa-lg"></i> faces.jpg](data/faces.jpg)</div>
 
-Download and copy to 'data' folder of the sketch : <br>
-<div class="link">[<i class="fa fa-download fa-lg"></i> faces.jpg](data/faces.jpg)</div><br>
-
----
+<hr>
 <div class="link">[<i class="fa fa-download fa-lg"></i> FaceDetector. pde](FaceDetector.pde)</div>
 
     import ketai.cv.facedetector.*;

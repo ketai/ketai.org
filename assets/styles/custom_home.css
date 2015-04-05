@@ -97,8 +97,8 @@ h3{
 	/*font-size: 2em;*/
 }
 .tagline a:hover {
-color: #333;
-border-bottom: 1px solid #333;
+/*color: #333;*/
+border-bottom: 1px solid #fff;
 }
 h2{
 	font-family: 'Roboto', sans-serif;

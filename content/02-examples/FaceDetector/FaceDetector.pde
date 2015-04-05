@@ -1,5 +1,5 @@
 /**
- * <p>Ketai Library for Android: http://KetaiProject.org</p>
+ * <p>Ketai Library for Android: http://ketai.org</p>
  *
  * <p>facedetector provides a face detector on android:
  * <ul>

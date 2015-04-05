@@ -14,13 +14,3 @@
 	word-wrap: break-word;
 	margin-bottom: 20px;
 }
-.sidelist a{
-	padding: 4px;
-	margin-left: -4px;
-}
-.sidelist li{
-	font-size: 2em !important;
-	font-weight: 100 !important;
-	padding-bottom: 13px !important;
-}
-
