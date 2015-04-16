@@ -4,7 +4,7 @@ title: Home
 #ke:tai
 <!-- ##Your companion to rapid android development.  -->
 <br>
-###let’s you create mobile apps using [Processing](https://processing.org/ "Processing"), a platform to promote software literacy within the visual arts.
+###let’s you [create mobile apps](/get-started/ " Get Started") using [Processing](https://processing.org/ "Processing"), a platform to promote software literacy within the visual arts.
 <br>
 ###<i class="fa fa-caret-right"></i>  ke:tai is good at everything an [Android](https://www.android.com/intl/en_us/ "Android") device does, and the desktop doesn’t. It’s a extensive library that gives you straight-forward access to [sensors](/reference/sensors/ "Sensors"), [cameras](/reference/camera/ "Camera"), and [networking](/reference/net/ "Networking Hardware") hardware.
 <br>
