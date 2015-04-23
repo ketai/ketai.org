@@ -3,7 +3,7 @@ title: Ketai Face
 excerpt: The Class KetaiFace wrap the internal android Face class.
 date: 02/01/2015
 ---
-#### Documentation
+#### KetaiFace
 
 ##### `public class KetaiFace extends Face`
 
