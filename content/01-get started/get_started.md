@@ -8,10 +8,10 @@ To use the library for Processing, make sure your setup meets the following mini
 <div class="sidelist">
 <ul>
 <li>
-- [<i class="fa fa-download"></i> Processing 3.0 ](https://processing.org/download/ "Download Processing (current pre-release is 3.0a5)")
+- [ Processing 3.0 ](https://processing.org/download/ "Download Processing (current pre-release is 3.0a5)")
 </li>
 <li>
-- [<i class="fa fa-download"></i> Java](http://java.com/en/download/ "Download Java 1.7")
+- [ Java](http://java.com/en/download/ "Download Java 1.7")
 </li>
 <li>
 - [ Android ](http://developer.android.com/sdk/index.html#Other "Android 4.0 Ice Cream Sandwich")

@@ -16,27 +16,24 @@ To download and install the latest version for the library, follow the instructi
 <hr>
 
 ####[<i class="fa fa-download"></i> Manually Install v11 ](http://ketailibrary.org/ketai.zip)
-<div class="hover_img">
-	<a href="http://ketailibrary.org/ketai.zip">
-		<img src="ketai_v11_bw.png" class="top">
-		<img src="ketai_color.png" class="bottom">
-	</a>
-<div style="position: absolute; margin-top: 230px;">
-
 1. Navigate to the Processing sketchbook folder.
 
 2. Go to libraries
 
 3. Download the ketai library [zip file](http://ketailibrary.org/ketai.zip). 
 
-4. Extract the contents of the zip file into your libraries folder. 
+4. Extract the contents of the zip file into your libraries folder.
 
-<!-- <a href="https://github.com/ketai/library/tree/master/Downloads" style=" color: #FFF;">
-	<i class="fa fa-download"></i> Archive
-</a> -->
-<hr>
+<div class="hover_img">
+	<a href="http://ketailibrary.org/ketai.zip">
+		<img src="ketai_v11_bw.png" class="top">
+		<img src="ketai_color.png" class="bottom">
+	</a>
+</div>
 
-Access archive of older versions
+<div style="position: absolute; margin-top: 230px;">
+
+<!-- <hr> -->
 
 <div class="link" style=" color: #FFF;">[<i class="fa fa-download fa-lg"></i> Archive](https://github.com/ketai/ketai/tree/master/downloads)</div>
 

@@ -1,16 +1,18 @@
-ul.menu
-  li: a(href="/") Home
-  for child in page.children
-    if isActive(child)
-      li: a.current(href=child.url) #{child.title}
-    else
-      li: a(href=child.url) #{child.title}
-  br
-  br
-  li: a.misc_link(href="https://github.com/ketai/library"): i.fa.fa-github  Github
-  li: a.misc_link(href="https://github.com/ketai/ketai/pulls"): i.fa.fa-code  Your Help
-  li: a.misc_link(href="https://github.com/ketai/ketai/issues"): i.fa.fa-comment-o  Forum
-  li: a.misc_link(href="https://twitter.com/ketailibrary"): i.fa.fa-twitter  Twitter
+ul.menu  
+  div
+    li: a(href="/") Home
+    for child in page.children
+      if isActive(child)
+        li: a.current(href=child.url) #{child.title}
+      else
+        li: a(href=child.url) #{child.title}
+    br
+    <script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only>
+    br
+    li: a.misc_link(href="https://github.com/ketai/library"): i.fa.fa-github  Github
+    li: a.misc_link(href="https://github.com/ketai/ketai/pulls"): i.fa.fa-code  Your Help
+    li: a.misc_link(href="https://github.com/ketai/ketai/issues"): i.fa.fa-comment-o  Forum
+    li: a.misc_link(href="https://twitter.com/ketailibrary"): i.fa.fa-twitter  Twitter
 
-  //- hr
-  //- !=template('related-package')
+    //- hr
+    //- !=template('related-package')

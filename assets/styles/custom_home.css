@@ -18,6 +18,14 @@ body{
 	background-size: cover;
 	
 }
+.gsc-control-cse {
+   border-color: transparent !important; 
+   background-color: inherit !important; 
+}
+.cse .gsc-control-cse, .gsc-control-cse {
+  background-color: inherit !important;
+  border: 0px !important;
+}
 #wrapper{
 	top: 50%;
 	margin-top: -15%;
