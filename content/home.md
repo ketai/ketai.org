@@ -1,6 +1,7 @@
 ---
 title: Home
 ---
+
 #ke:tai
 <!-- ##Your companion to rapid android development.  -->
 <br>
