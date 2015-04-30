@@ -1,9 +1,4 @@
----
-title: Ketai Net
-excerpt: This is the excerpt from the project.
-date: 02/02/2012
----
-#### Ketai Net
+####KetaiNet
 
 ##### `public class KetaiNet`
 

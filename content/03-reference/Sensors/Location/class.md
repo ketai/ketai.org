@@ -1,9 +1,4 @@
----
-title: Location
-excerpt: The Class KetaiBluetooth manages the bluetooth connections and service on the android device. This class has been tested and can manage multiple simultaneous bluetooth connections. The maximum number of connections varied by device limitations but 3 simultaneous connections were typical. 
-date: 01/02/2015
----
-#### Location
+####Location
 
 ##### `public class Location extends android.location.Location`
 

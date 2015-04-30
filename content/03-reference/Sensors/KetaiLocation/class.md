@@ -1,9 +1,4 @@
----
-title: KetaiLocation
-excerpt: The KetaiLocation class provides android location services data to a sketch.
-date: 01/02/2015
----
-#### KetaiLocation
+####KetaiLocation
 
 ##### `public class KetaiLocation implements LocationListener`
 

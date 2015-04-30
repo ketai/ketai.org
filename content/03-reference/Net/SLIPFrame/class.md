@@ -1,9 +1,4 @@
----
-title: SLIPFrame
-excerpt: The Class SLIPFrame.
-date: 01/02/2015
----
-#### SLIPFrame
+####SLIPFrame
 
 ##### `public class SLIPFrame`
 

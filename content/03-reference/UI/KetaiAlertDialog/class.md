@@ -1,9 +1,4 @@
----
-title: KetaiAlertDialog
-excerpt: The KetaiAlertDialog.
-date: 01/02/2015
----
-#### KetaiAlertDialog
+####KetaiAlertDialog
 
 ##### `public class KetaiAlertDialog`
 

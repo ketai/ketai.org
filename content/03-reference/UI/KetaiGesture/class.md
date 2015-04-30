@@ -1,9 +1,4 @@
----
-title: KetaiGesture
-excerpt: Provides gesture recognition services to a processing sketch.
-date: 01/02/2015
----
-#### KetaiGesture
+####KetaiGesture
 
 ##### `public class KetaiGesture implements OnGestureListener, OnDoubleTapListener`
 

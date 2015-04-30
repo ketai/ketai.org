@@ -1,9 +1,4 @@
----
-title: Ketai OSCMessage
-excerpt: The Class KetaiOSCMessage.
-date: 01/02/2015
----
-#### Ketai OSCMessage
+####KetaiOSCMessage
 
 ##### `public class KetaiOSCMessage extends OscMessage`
 

@@ -1,9 +1,4 @@
----
-title: KetaiSensor
-excerpt: The KetaiSensor class provides access to android sensors. 
-date: 01/02/2015
----
-#### KetaiSensor
+####KetaiSensor
 
 ##### `public class KetaiSensor implements SensorEventListener`
 
@@ -31,11 +26,11 @@ The on sensor event method.
 
 The magnetometer data.
 
-##### `private Method onAccelerometerEventMethod,    onAccelerometerEventMethodSimple, onOrientationSensorEventMethod,    onOrientationSensorEventMethodSimple, onGyroscopeSensorEventMethod,    onGyroscopeSensorEventMethodSimple,     onMagneticFieldSensorEventMethod,    onMagneticFieldSensorEventMethodSimple, onLightSensorEventMethod,    onLightSensorEventMethodSimple, onProximitySensorEventMethod,    onProximitySensorEventMethodSimple, onPressureSensorEventMethod,    onPressureSensorEventMethodSimple, onTemperatureSensorEventMethod,    onTemperatureSensorEventMethodSimple,    onRotationVectorSensorEventMethod,    onRotationVectorSensorEventMethodSimple,    onGravitySensorEventMethod, onGravitySensorEventMethodSimple,    onLinearAccelerationSensorEventMethod,    onLinearAccelerationSensorEventMethodSimple,    onAmbientTemperatureEventMethod, onRelativeHumidityEventMethod`
+##### `private Method onAccelerometerEventMethod,    onAccelerometerEventMethodSimple, onOrientationSensorEventMethod,    onOrientationSensorEventMethodSimple, onGyroscopeSensorEventMethod,    onGyroscopeSensorEventMethodSimple,    onMagneticFieldSensorEventMethod,    onMagneticFieldSensorEventMethodSimple, onLightSensorEventMethod,    onLightSensorEventMethodSimple, onProximitySensorEventMethod,    onProximitySensorEventMethodSimple, onPressureSensorEventMethod,    onPressureSensorEventMethodSimple, onTemperatureSensorEventMethod,    onTemperatureSensorEventMethodSimple,    onRotationVectorSensorEventMethod,    onRotationVectorSensorEventMethodSimple,    onGravitySensorEventMethod, onGravitySensorEventMethodSimple,    onLinearAccelerationSensorEventMethod,    onLinearAccelerationSensorEventMethodSimple,    onAmbientTemperatureEventMethod, onRelativeHumidityEventMethod,    onGameRotationEventMethod, onGeomagneticRotationVectorEventMethod,    onHeartRateEventMethod, onSignificantMotionEventMethod,    onStepCounterEventMethod, onStepDetectorEventMethod`
 
 The on relative humidity event method.
 
-##### `private boolean accelerometerSensorEnabled, magneticFieldSensorEnabled,    orientationSensorEnabled, proximitySensorEnabled, useSimulator,    lightSensorEnabled, pressureSensorEnabled,    temperatureSensorEnabled, gyroscopeSensorEnabled,    rotationVectorSensorEnabled, linearAccelerationSensorEnabled,    gravitySensorEnabled, ambientTemperatureSensorEnabled,    relativeHumiditySensorEnabled`
+##### `private boolean accelerometerSensorEnabled, magneticFieldSensorEnabled,    orientationSensorEnabled, proximitySensorEnabled, useSimulator,    lightSensorEnabled, pressureSensorEnabled,    temperatureSensorEnabled, gyroscopeSensorEnabled,    rotationVectorSensorEnabled, linearAccelerationSensorEnabled,    gravitySensorEnabled, ambientTemperatureSensorEnabled,    relativeHumiditySensorEnabled, gameRotationSensorEnabled,    geomagneticRotationVectorSensorEnabled, heartRateSensorEnabled,    significantMotionSensorEnabled, stepCounterSensorEnabled,    stepDetectorSensorEnabled`
 
 The relative humidity sensor enabled.
 
@@ -119,7 +114,7 @@ Disable proximity.
 
 ##### `public void disablelinearAcceleration()`
 
-Disablelinear acceleration.
+Disable linear acceleration.
 
 ##### `public void disableRotationVector()`
 
@@ -159,7 +154,7 @@ Disable gyroscope.
 
 ##### `public void disableAmibentTemperature()`
 
-Disable amibent temperature.
+Disable ambient temperature.
 
 ##### `public void disableRelativeHumiditySensor()`
 
@@ -167,11 +162,59 @@ Disable relative humidity sensor.
 
 ##### `public void enableAmibentTemperature()`
 
-Enable amibent temperature.
+Enable ambient temperature.
 
 ##### `public void enableRelativeHumiditySensor()`
 
 Enable relative humidity sensor.
+
+##### `public void enableStepDetectorSensor()`
+
+Enable Step counter sensor.
+
+##### `public void disableStepDetectorSensor()`
+
+Disable Step counter sensor.
+
+##### `public void enableStepCounterSensor()`
+
+Enable Step counter sensor.
+
+##### `public void disableStepCounterSensor()`
+
+Disable Step counter sensor.
+
+##### `public void enableSignificantMotionSensor()`
+
+Enable Significant Motion sensor.
+
+##### `public void disableSignificantMotionSensor()`
+
+Disable Significant Motion sensor.
+
+##### `public void enableHeartRateSensor()`
+
+Enable heart rate sensor.
+
+##### `public void disableHeartRateSensor()`
+
+Disable heart rate sensor.
+
+##### `public void enableGeomagneticRotationVectorSensor()`
+
+Enable geomagnetic rotation sensor.
+
+##### `public void disableGeomagneticRotationVectorSensor()`
+
+Disable geomagnetic rotation sensor.
+
+##### `public void enableGameRotationSensor()`
+
+Enable ambient game rotation sensor.
+
+##### `public void disableGameRotationSensor()`
+
+Disable game rotation sensor.
 
 ##### `public void enableAllSensors()`
 
@@ -249,6 +292,36 @@ Checks if is relative humidity available.
 
  * **Returns:** true, if is relative humidity available
 
+##### `public boolean isStepDetectorAvailable()`
+
+Checks if is step detector sensor is available.
+
+ * **Returns:** true, if heart rate sensor is available
+
+##### `public boolean isStepCounterAvailable()`
+
+Checks if is step counter sensor is available.
+
+ * **Returns:** true, if step counter sensor is available
+
+##### `public boolean isSignificantMotionAvailable()`
+
+Checks if is significant motion sensor is available.
+
+ * **Returns:** true, if significant motion sensor is available
+
+##### `public boolean isGeomagneticRotationVectorAvailable()`
+
+Checks if is geomagnetic rotation vector sensor is available.
+
+ * **Returns:** true, if geomagnetic rotation vector sensor is available
+
+##### `public boolean isGameRotationAvailable()`
+
+Checks if is game rotation sensor is available.
+
+ * **Returns:** true, if game rotation sensor is available
+
 ##### `public Collection<? extends String> list()`
 
 List.
@@ -302,7 +375,7 @@ Gets the service description.
 
  * **Returns:** the service description
 
-##### `public static void getRotationMatrixFromVector(float[] R, float[] rotationVector)`
+##### `public static void getRotationMatrixFromVector(float[] R,    float[] rotationVector)`
 
 Gets the rotation matrix from vector. 
 

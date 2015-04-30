@@ -1,9 +1,4 @@
----
-title: KetaiKeyboard
-excerpt: The KetaiKeyboard class allows the soft keyboard to be managed.
-date: 01/02/2015
----
-#### KetaiKeyboard
+####KetaiKeyboard
 
 ##### `public class KetaiKeyboard`
 

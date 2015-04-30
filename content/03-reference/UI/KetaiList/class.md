@@ -1,9 +1,4 @@
----
-title: KetaiList
-excerpt: The KetaiList class provides an android UI scroll list.
-date: 01/02/2015
----
-#### KetaiList
+####KetaiList
 
 ##### `public class KetaiList extends ListView`
 

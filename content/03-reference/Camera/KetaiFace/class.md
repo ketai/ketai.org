@@ -1,9 +1,4 @@
----
-title: Ketai Face
-excerpt: The Class KetaiFace wrap the internal android Face class.
-date: 02/01/2015
----
-#### KetaiFace
+####KetaiFace
 
 ##### `public class KetaiFace extends Face`
 
@@ -25,4 +20,3 @@ Instantiates a new ketai face.
    * `f` — the face Object
    * `frameWidth` — the frame width to map the Face on
    * `frameHeight` — the frame height to map the Face on
-

@@ -1,9 +1,4 @@
----
-title: Ketai Camera
-excerpt: The Class KetaiCamera allows the processing sketches to access android cameras through an object modeled after the desktop/java processing Camera class.
-date: 02/01/2015
----
-#### Ketai Camera
+####KetaiCamera
 
 ##### `public class KetaiCamera extends PImage`
 
@@ -232,7 +227,7 @@ Dispose.
 
 ##### `public void decodeYUV420SP(byte[] yuv420sp)`
 
-Decode yu v420 sp. 
+Decode yuv420 sp. 
 
 the yuv420sp
 
@@ -261,6 +256,3 @@ On frame available callback, used by the camera service.
 the arg0
 
  * **Parameters:** `arg0` — 
-
-
- 
