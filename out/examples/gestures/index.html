@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description"><meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/styles/html5reset.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/responsivegridsystem.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/6cols.css" media="all">
+    <!-- Responsive Stylesheets -->
+    <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/assets/styles/1024.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/assets/styles/768.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="/assets/styles/480.css">
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+    <script src="/assets/scripts/modernizr-2.5.3-min.js"></script><link rel="stylesheet" type="text/css" href="/assets/styles/menu_sideslide.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/code_block.css" />
+    <link rel="stylesheet" href="/assets/styles/search.css">
+    <link rel="stylesheet" href="/assets/styles/code_example.css">
+    <title>Ketai Library - Gestures</title>
+  </head>
+</html>
+<body>
+<div class="menu-wrap">
+  <nav class="menu">
+    <div class="icon-list">
+<ul class="menu"> 
+  <div>
+    <li><a href="/">Home</a></li>
+    <li><a href="/get-started/">Get Started</a></li>
+    <li><a href="/examples/">Examples</a></li>
+    <li><a href="/reference/">Reference</a></li>
+    <li><a href="/download/">Download</a></li><br/><script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only><br/>
+    <li><a href="https://github.com/ketai/library" class="misc_link"><i class="fa fa-github"> Github</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/pulls" class="misc_link"><i class="fa fa-code"> Your Help</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/issues" class="misc_link"><i class="fa fa-comment-o"> Forum</i></a></li>
+    <li><a href="https://twitter.com/ketailibrary" class="misc_link"><i class="fa fa-twitter"> Twitter</i></a></li>
+  </div>
+</ul>
+    </div>
+  </nav>
+  <button id="close-button" class="close-button">Close Menu</button>
+</div>
+<button id="open-button" class="menu-button">Open Menu</button>
+<div class="title">
+  <nav class="menu"></nav>
+</div>
+  <div id="wrapper">
+    <div class="title">
+      <h2>Ketai</h2>
+    </div>
+    <div id="maincontentcontainer">
+      <div class="maincontent">
+        <div class="section group">
+          <div class="col span_1_of_6 menubar"><a href="/"><img src="/assets/images/ketai_black.png" class="top"><img src="/assets/images/ketai_v10.png" class="bottom"></a>
+<ul class="menu"> 
+  <div>
+    <li><a href="/">Home</a></li>
+    <li><a href="/get-started/">Get Started</a></li>
+    <li><a href="/examples/">Examples</a></li>
+    <li><a href="/reference/">Reference</a></li>
+    <li><a href="/download/">Download</a></li><br/><script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only><br/>
+    <li><a href="https://github.com/ketai/library" class="misc_link"><i class="fa fa-github"> Github</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/pulls" class="misc_link"><i class="fa fa-code"> Your Help</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/issues" class="misc_link"><i class="fa fa-comment-o"> Forum</i></a></li>
+    <li><a href="https://twitter.com/ketailibrary" class="misc_link"><i class="fa fa-twitter"> Twitter</i></a></li>
+  </div>
+</ul>
+            <hr>
+<h4><b>Other Examples:</b></h4>
+<ul class="sidelist_menu">
+  <li><a href="/examples/accelerometer/">Accelerometer</a></li>
+  <li><a href="/examples/audioinput/">Audio Input</a></li>
+  <li><a href="/examples/bluetoothcursors/">Bluetooth Connection</a></li>
+  <li><a href="/examples/cameragettingstarted/">Getting Camera Started</a></li>
+  <li><a href="/examples/datacapture/">Data Capture</a></li>
+  <li><a href="/examples/externalsqliteloading/">External SQLite Loading</a></li>
+  <li><a href="/examples/facedetector/">Face Detector</a></li>
+  <li><a href="/examples/geolocation/">Geolocation</a></li>
+  <li><a href="/examples/gestures/" class="active">Gestures</a></li>
+  <li><a href="/examples/gyroscope/">Gyroscope</a></li>
+  <li><a href="/examples/locationdistance/">Location Distance</a></li>
+  <li><a href="/examples/multiplesensors/">Multiple Sensors</a></li>
+  <li><a href="/examples/nfcbeam/">NFC Beam</a></li>
+  <li><a href="/examples/nfcread/">NFC Read</a></li>
+  <li><a href="/examples/nfcwrite/">NFC Write</a></li>
+  <li><a href="/examples/sqlite/">SQLite</a></li>
+  <li><a href="/examples/ui/">UI</a></li>
+  <li><a href="/examples/wifidirect-remotecursor/">WiFi Direct - Remote Cursor</a></li>
+</ul>
+          </div>
+          <div class="col span_4_of_6 reference">
+            <h3>Examples</h3><h4 id="gestures">Gestures</h4>
+<p>This example illustrates the use of Gestures</p>
+<hr>
+<div class="link"><a href="Gestures.pde"><i class="fa fa-download fa-lg"></i> Gestures. pde</a></div>
+
+<pre><code>import android.view.MotionEvent;
+
+import ketai.ui.*;
+
+KetaiGesture gesture;
+float Size = 10;
+float Angle = 0;
+PImage img;
+ArrayList&lt;Thing&gt; things = new ArrayList&lt;Thing&gt;();
+
+void setup()
+{
+  orientation(LANDSCAPE);
+  gesture = new KetaiGesture(this);
+  img = loadImage(&quot;toci.jpg&quot;);
+  textSize(32);
+  textAlign(CENTER);
+  imageMode(CENTER);
+}
+
+void draw()
+{
+  background(128);
+  pushMatrix();
+  translate(width/2, height/2);
+  rotate(Angle);
+  image(img, 0, 0, Size, Size);
+  popMatrix();
+
+  //if we have things lets reverse through them 
+  //  so we can delete dead ones and draw live ones
+  if (things.size() &gt; 0)
+    for (int i = things.size()-1; i &gt;= 0; i--)
+    {
+      Thing t = things.get(i);
+      if (t.isDead())
+        things.remove(t);
+      else
+        t.draw();
+    }
+}
+
+void onDoubleTap(float x, float y)
+{
+  things.add(new Thing(&quot;DOUBLE&quot;, x, y));
+}
+
+void onTap(float x, float y)
+{
+  things.add(new Thing(&quot;SINGLE&quot;, x, y));
+}
+
+void onLongPress(float x, float y)
+{
+  things.add(new Thing(&quot;LONG&quot;, x, y));
+}
+
+//the coordinates of the start of the gesture, 
+//     end of gesture and velocity in pixels/sec
+void onFlick( float x, float y, float px, float py, float v)
+{
+  things.add(new Thing(&quot;FLICK:&quot;+v, x, y, px, py));
+}
+
+void onPinch(float x, float y, float d)
+{
+  Size = constrain(Size+d, 10, 2000);
+}
+
+void onRotate(float x, float y, float ang)
+{
+  Angle += ang;
+}
+
+//these still work if we forward MotionEvents below
+void mouseDragged()
+{
+}
+
+void mousePressed()
+{}
+
+
+public boolean surfaceTouchEvent(MotionEvent event) {
+
+  //call to keep mouseX, mouseY, etc updated
+  super.surfaceTouchEvent(event);
+
+  //forward event to class for processing
+  return gesture.surfaceTouchEvent(event);
+}
+</code></pre><hr>
+<div class="link"><a href="Thing.pde"><i class="fa fa-download fa-lg"></i> Thing. pde</a></div>
+
+<pre><code>class Thing
+{
+  PVector location;
+  PVector plocation;
+  String  mText=&quot;&quot;;
+  float life = frameRate * 3;
+
+  public Thing(String _text, float x, float y)
+  {
+    mText = _text;
+    location = new PVector(x, y);
+  }
+
+  public Thing(String _text, float x, float y, float px, float py)
+  {
+    mText = _text;
+    location = new PVector(x, y);
+    plocation = new PVector(px, py);
+  }
+
+  public void draw()
+  {
+    pushStyle();
+    stroke(255,map(life, frameRate*3, 0, 255, 0));
+    fill(255, map(life, frameRate*3, 0, 255, 0));
+    life--;
+    if (life &gt; 0)
+      text(mText, location.x, location.y);
+
+    if (plocation != null)
+      line(location.x, location.y, plocation.x, plocation.y);
+    popStyle();
+  }
+
+  public boolean isDead()
+  {
+    return(life &lt;= 0);
+  }
+}
+</code></pre> <!-- * **Screenshot** --><img src="/assets/thumbnails/8ab3bfc3d2c81851948ccb8d3976ba94.png" width="800" height="480"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><script src="/assets/scripts/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/assets/scripts/jquery-1.7.2.min.js"><\/script>')</script>
+  <script src="/assets/scripts/classie.js"></script>
+  <script src="/assets/scripts/menu.js"></script>
+  <script src="/assets/scripts/responsivegridsystem.js"></script>
+</body>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description"><meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/styles/html5reset.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/responsivegridsystem.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/6cols.css" media="all">
+    <!-- Responsive Stylesheets -->
+    <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/assets/styles/1024.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/assets/styles/768.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="/assets/styles/480.css">
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+    <script src="/assets/scripts/modernizr-2.5.3-min.js"></script><link rel="stylesheet" type="text/css" href="/assets/styles/menu_sideslide.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/code_block.css" />
+    <link rel="stylesheet" href="/assets/styles/code_example.css">
+    <link rel="stylesheet" href="/assets/styles/search.css">
+    <title>Ketai Library - KetaiSensor</title>
+  </head>
+</html>
+<body>
+<div class="menu-wrap">
+  <nav class="menu">
+    <div class="icon-list">
+<ul class="menu"> 
+  <div>
+    <li><a href="/">Home</a></li>
+    <li><a href="/get-started/">Get Started</a></li>
+    <li><a href="/examples/">Examples</a></li>
+    <li><a href="/reference/">Reference</a></li>
+    <li><a href="/download/">Download</a></li><br/><script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only><br/>
+    <li><a href="https://github.com/ketai/library" class="misc_link"><i class="fa fa-github"> Github</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/pulls" class="misc_link"><i class="fa fa-code"> Your Help</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/issues" class="misc_link"><i class="fa fa-comment-o"> Forum</i></a></li>
+    <li><a href="https://twitter.com/ketailibrary" class="misc_link"><i class="fa fa-twitter"> Twitter</i></a></li>
+  </div>
+</ul>
+    </div>
+  </nav>
+  <button id="close-button" class="close-button">Close Menu</button>
+</div>
+<button id="open-button" class="menu-button">Open Menu</button>
+<div class="title">
+  <nav class="menu"></nav>
+</div>
+  <div id="wrapper">
+    <div class="title">
+      <h2>Ketai</h2>
+    </div>
+    <div id="maincontentcontainer">
+      <div class="maincontent">
+        <div class="section group">
+          <div class="col span_1_of_6 menubar"><a href="/"><img src="/assets/images/ketai_black.png" class="top"><img src="/assets/images/ketai_v10.png" class="bottom"></a>
+<ul class="menu"> 
+  <div>
+    <li><a href="/">Home</a></li>
+    <li><a href="/get-started/">Get Started</a></li>
+    <li><a href="/examples/">Examples</a></li>
+    <li><a href="/reference/">Reference</a></li>
+    <li><a href="/download/">Download</a></li><br/><script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only><br/>
+    <li><a href="https://github.com/ketai/library" class="misc_link"><i class="fa fa-github"> Github</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/pulls" class="misc_link"><i class="fa fa-code"> Your Help</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/issues" class="misc_link"><i class="fa fa-comment-o"> Forum</i></a></li>
+    <li><a href="https://twitter.com/ketailibrary" class="misc_link"><i class="fa fa-twitter"> Twitter</i></a></li>
+  </div>
+</ul>
+            <hr>
+<h4><b>Other Packages:</b></h4>
+<ul class="sidelist_menu">
+  <li><a href="/reference/cv/">CV</a></li>
+  <li><a href="/reference/camera/">Camera</a></li>
+  <li><a href="/reference/data/">Data</a></li>
+  <li><a href="/reference/net/">Net</a></li>
+  <li><a href="/reference/netbluetooth/">Net Bluetooth</a></li>
+  <li><a href="/reference/netnfc/">Net NFC</a></li>
+  <li><a href="/reference/sensors/">Sensors</a></li>
+  <li><a href="/reference/ui/">UI</a></li>
+</ul>
+          </div>
+          <div class="col span_4_of_6 reference">
+            <h3>Reference</h3><h4 id="ketaisensor">KetaiSensor</h4>
+<h5 id="-public-class-ketaisensor-implements-sensoreventlistener-"><code>public class KetaiSensor implements SensorEventListener</code></h5>
+<p>The KetaiSensor class provides access to android sensors. To receive sensor data the following methods can be defined in your sketch:<br /> <br /> </p>
+<p>void onSensorEvent(SensorEvent e) - raw android sensor event <br /> void onAccelerometerEvent(float x, float y, float z, long a, int b): x,y,z force in m/s^2, a=timestamp(nanos), b=accuracy<br /> void onAccelerometerEvent(float x, float y, float z): x,y,z force in m/s2<br /> void onOrientationEvent(float x, float y, flaot z, long a, int b): x,y,z rotation in degrees, a=timestamp(nanos), b=accuracy<br /> void onOrientationEvent(float x, float y, float z) : x,y,z rotation in degrees<br /> void onMagneticFieldEvent(float x, float y, float z, long a, int b) : x,y,z geomag field in uT, a=timestamp(nanos), b=accuracy<br /> void onMagneticFieldEvent(float x, float y, float z): x,y,z geomagnetic field in uT<br /> void onGyroscopeEvent(float x, float y, float z, long a, int b):x,y,z rotation in rads/sec, a=timestamp(nanos), b=accuracy<br /> void onGyroscopeEvent(float x, float y, float z): x,y,z rotation in rads/sec<br /> void onGravityEvent(float x, float y, float z, long a, int b): x,y,z force of gravity in m/s^2, a=timestamp(nanos), b=accuracy<br /> void onGravityEvent(float x, float y, float z): x,y,z rotation in m/s^s<br /> void onProximityEvent(float d, long a, int b): d distance from sensor (typically 0,1), a=timestamp(nanos), b=accuracy<br /> void onProximityEvent(float d): d distance from sensor (typically 0,1)<br /> void onLightEvent(float d, long a, int b): d illumination from sensor in lx<br /> void onLightEvent(float d): d illumination from sensor in lx<br /> void onPressureEvent(float p, long a, int b): p ambient pressure in hPa or mbar, a=timestamp(nanos), b=accuracy<br /> void onPressureEvent(float p): p ambient pressure in hPa or mbar<br /> void onTemperatureEvent(float t, long a, int b): t temperature in degrees in degrees Celsius, a=timestamp(nanos), a=timestamp(nanos), b=accuracy<br /> void onTemperatureEvent(float t): t temperature in degrees in degrees Celsius<br /> void onLinearAccelerationEvent(float x, float y, float z, long a, int b): x,y,z acceleration force in m/s^2, minus gravity, a=timestamp(nanos), b=accuracy<br /> void onLinearAccelerationEvent(float x, float y, float z): x,y,z acceleration force in m/s^2, minus gravity<br /> void onRotationVectorEvent(float x, float y, float z, long a, int b): x,y,z rotation vector values, a=timestamp(nanos), b=accuracy<br /> void onRotationVectorEvent(float x, float y, float z):x,y,z rotation vector values<br /> void onAmibentTemperatureEvent(float t): same as temp above (newer API)<br /> void onRelativeHumidityEvent(float h): h ambient humidity in percentage<br /></p>
+<h5 id="-private-sensormanager-sensormanager-null-"><code>private SensorManager sensorManager = null</code></h5>
+<p>The sensor manager.</p>
+<h5 id="-private-boolean-isregistered-false-"><code>private boolean isRegistered = false</code></h5>
+<p>The is registered.</p>
+<h5 id="-private-papplet-parent-"><code>private PApplet parent</code></h5>
+<p>The parent.</p>
+<h5 id="-private-method-onsensoreventmethod-"><code>private Method onSensorEventMethod</code></h5>
+<p>The on sensor event method.</p>
+<h5 id="-float-accelerometerdata-magnetometerdata-"><code>float[] accelerometerData, magnetometerData</code></h5>
+<p>The magnetometer data.</p>
+<h5 id="-private-method-onaccelerometereventmethod-onaccelerometereventmethodsimple-onorientationsensoreventmethod-onorientationsensoreventmethodsimple-ongyroscopesensoreventmethod-ongyroscopesensoreventmethodsimple-onmagneticfieldsensoreventmethod-onmagneticfieldsensoreventmethodsimple-onlightsensoreventmethod-onlightsensoreventmethodsimple-onproximitysensoreventmethod-onproximitysensoreventmethodsimple-onpressuresensoreventmethod-onpressuresensoreventmethodsimple-ontemperaturesensoreventmethod-ontemperaturesensoreventmethodsimple-onrotationvectorsensoreventmethod-onrotationvectorsensoreventmethodsimple-ongravitysensoreventmethod-ongravitysensoreventmethodsimple-onlinearaccelerationsensoreventmethod-onlinearaccelerationsensoreventmethodsimple-onambienttemperatureeventmethod-onrelativehumidityeventmethod-ongamerotationeventmethod-ongeomagneticrotationvectoreventmethod-onheartrateeventmethod-onsignificantmotioneventmethod-onstepcountereventmethod-onstepdetectoreventmethod-"><code>private Method onAccelerometerEventMethod,    onAccelerometerEventMethodSimple, onOrientationSensorEventMethod,    onOrientationSensorEventMethodSimple, onGyroscopeSensorEventMethod,    onGyroscopeSensorEventMethodSimple,    onMagneticFieldSensorEventMethod,    onMagneticFieldSensorEventMethodSimple, onLightSensorEventMethod,    onLightSensorEventMethodSimple, onProximitySensorEventMethod,    onProximitySensorEventMethodSimple, onPressureSensorEventMethod,    onPressureSensorEventMethodSimple, onTemperatureSensorEventMethod,    onTemperatureSensorEventMethodSimple,    onRotationVectorSensorEventMethod,    onRotationVectorSensorEventMethodSimple,    onGravitySensorEventMethod, onGravitySensorEventMethodSimple,    onLinearAccelerationSensorEventMethod,    onLinearAccelerationSensorEventMethodSimple,    onAmbientTemperatureEventMethod, onRelativeHumidityEventMethod,    onGameRotationEventMethod, onGeomagneticRotationVectorEventMethod,    onHeartRateEventMethod, onSignificantMotionEventMethod,    onStepCounterEventMethod, onStepDetectorEventMethod</code></h5>
+<p>The on relative humidity event method.</p>
+<h5 id="-private-boolean-accelerometersensorenabled-magneticfieldsensorenabled-orientationsensorenabled-proximitysensorenabled-usesimulator-lightsensorenabled-pressuresensorenabled-temperaturesensorenabled-gyroscopesensorenabled-rotationvectorsensorenabled-linearaccelerationsensorenabled-gravitysensorenabled-ambienttemperaturesensorenabled-relativehumiditysensorenabled-gamerotationsensorenabled-geomagneticrotationvectorsensorenabled-heartratesensorenabled-significantmotionsensorenabled-stepcountersensorenabled-stepdetectorsensorenabled-"><code>private boolean accelerometerSensorEnabled, magneticFieldSensorEnabled,    orientationSensorEnabled, proximitySensorEnabled, useSimulator,    lightSensorEnabled, pressureSensorEnabled,    temperatureSensorEnabled, gyroscopeSensorEnabled,    rotationVectorSensorEnabled, linearAccelerationSensorEnabled,    gravitySensorEnabled, ambientTemperatureSensorEnabled,    relativeHumiditySensorEnabled, gameRotationSensorEnabled,    geomagneticRotationVectorSensorEnabled, heartRateSensorEnabled,    significantMotionSensorEnabled, stepCounterSensorEnabled,    stepDetectorSensorEnabled</code></h5>
+<p>The relative humidity sensor enabled.</p>
+<h5 id="-private-long-delayinterval-timeoflastupdate-"><code>private long delayInterval, timeOfLastUpdate</code></h5>
+<p>The time of last update.</p>
+<h5 id="-final-static-string-service_description-android-sensors-"><code>final static String SERVICE_DESCRIPTION = &quot;Android Sensors.&quot;</code></h5>
+<p>The Constant SERVICE_DESCRIPTION.</p>
+<h5 id="-public-ketaisensor-papplet-pparent-"><code>public KetaiSensor(PApplet pParent)</code></h5>
+<p>Instantiates a new ketai sensor. </p>
+<p>PApplet/sketch instance</p>
+<ul>
+<li><strong>Parameters:</strong> <code>pParent</code> — </li>
+</ul>
+<h5 id="-public-void-usesimulator-boolean-flag-"><code>public void useSimulator(boolean flag)</code></h5>
+<p>Use simulator. </p>
+<p>the flag</p>
+<ul>
+<li><strong>Parameters:</strong> <code>flag</code> — </li>
+</ul>
+<h5 id="-public-boolean-usingsimulator-"><code>public boolean usingSimulator()</code></h5>
+<p>Using simulator.</p>
+<ul>
+<li><strong>Returns:</strong> true, if successful</li>
+</ul>
+<h5 id="-public-void-setdelayinterval-long-pdelayinterval-"><code>public void setDelayInterval(long pDelayInterval)</code></h5>
+<p>Sets the delay interval. </p>
+<p>the new delay interval</p>
+<ul>
+<li><strong>Parameters:</strong> <code>pDelayInterval</code> — </li>
+</ul>
+<h5 id="-public-void-enableaccelerometer-"><code>public void enableAccelerometer()</code></h5>
+<p>Enable accelerometer.</p>
+<h5 id="-public-void-enablerotationvector-"><code>public void enableRotationVector()</code></h5>
+<p>Enable rotation vector.</p>
+<h5 id="-public-void-enablelinearacceleration-"><code>public void enableLinearAcceleration()</code></h5>
+<p>Enable linear acceleration.</p>
+<h5 id="-public-void-disableaccelerometer-"><code>public void disableAccelerometer()</code></h5>
+<p>Disable accelerometer.</p>
+<h5 id="-public-void-enablemagenticfield-"><code>public void enableMagenticField()</code></h5>
+<p>Enable magentic field.</p>
+<h5 id="-public-void-disablemagneticfield-"><code>public void disableMagneticField()</code></h5>
+<p>Disable magnetic field.</p>
+<h5 id="-public-void-enableorientation-"><code>public void enableOrientation()</code></h5>
+<p>Enable orientation.</p>
+<h5 id="-public-void-disableorientation-"><code>public void disableOrientation()</code></h5>
+<p>Disable orientation.</p>
+<h5 id="-public-void-enableproximity-"><code>public void enableProximity()</code></h5>
+<p>Enable proximity.</p>
+<h5 id="-public-void-disableproximity-"><code>public void disableProximity()</code></h5>
+<p>Disable proximity.</p>
+<h5 id="-public-void-disablelinearacceleration-"><code>public void disablelinearAcceleration()</code></h5>
+<p>Disable linear acceleration.</p>
+<h5 id="-public-void-disablerotationvector-"><code>public void disableRotationVector()</code></h5>
+<p>Disable rotation vector.</p>
+<h5 id="-public-void-enablelight-"><code>public void enableLight()</code></h5>
+<p>Enable light.</p>
+<h5 id="-public-void-disablelight-"><code>public void disableLight()</code></h5>
+<p>Disable light.</p>
+<h5 id="-public-void-enablepressure-"><code>public void enablePressure()</code></h5>
+<p>Enable pressure.</p>
+<h5 id="-public-void-disablepressure-"><code>public void disablePressure()</code></h5>
+<p>Disable pressure.</p>
+<h5 id="-public-void-enabletemperature-"><code>public void enableTemperature()</code></h5>
+<p>Enable temperature.</p>
+<h5 id="-public-void-disabletemperature-"><code>public void disableTemperature()</code></h5>
+<p>Disable temperature.</p>
+<h5 id="-public-void-enablegyroscope-"><code>public void enableGyroscope()</code></h5>
+<p>Enable gyroscope.</p>
+<h5 id="-public-void-disablegyroscope-"><code>public void disableGyroscope()</code></h5>
+<p>Disable gyroscope.</p>
+<h5 id="-public-void-disableamibenttemperature-"><code>public void disableAmibentTemperature()</code></h5>
+<p>Disable ambient temperature.</p>
+<h5 id="-public-void-disablerelativehumiditysensor-"><code>public void disableRelativeHumiditySensor()</code></h5>
+<p>Disable relative humidity sensor.</p>
+<h5 id="-public-void-enableamibenttemperature-"><code>public void enableAmibentTemperature()</code></h5>
+<p>Enable ambient temperature.</p>
+<h5 id="-public-void-enablerelativehumiditysensor-"><code>public void enableRelativeHumiditySensor()</code></h5>
+<p>Enable relative humidity sensor.</p>
+<h5 id="-public-void-enablestepdetectorsensor-"><code>public void enableStepDetectorSensor()</code></h5>
+<p>Enable Step counter sensor.</p>
+<h5 id="-public-void-disablestepdetectorsensor-"><code>public void disableStepDetectorSensor()</code></h5>
+<p>Disable Step counter sensor.</p>
+<h5 id="-public-void-enablestepcountersensor-"><code>public void enableStepCounterSensor()</code></h5>
+<p>Enable Step counter sensor.</p>
+<h5 id="-public-void-disablestepcountersensor-"><code>public void disableStepCounterSensor()</code></h5>
+<p>Disable Step counter sensor.</p>
+<h5 id="-public-void-enablesignificantmotionsensor-"><code>public void enableSignificantMotionSensor()</code></h5>
+<p>Enable Significant Motion sensor.</p>
+<h5 id="-public-void-disablesignificantmotionsensor-"><code>public void disableSignificantMotionSensor()</code></h5>
+<p>Disable Significant Motion sensor.</p>
+<h5 id="-public-void-enableheartratesensor-"><code>public void enableHeartRateSensor()</code></h5>
+<p>Enable heart rate sensor.</p>
+<h5 id="-public-void-disableheartratesensor-"><code>public void disableHeartRateSensor()</code></h5>
+<p>Disable heart rate sensor.</p>
+<h5 id="-public-void-enablegeomagneticrotationvectorsensor-"><code>public void enableGeomagneticRotationVectorSensor()</code></h5>
+<p>Enable geomagnetic rotation sensor.</p>
+<h5 id="-public-void-disablegeomagneticrotationvectorsensor-"><code>public void disableGeomagneticRotationVectorSensor()</code></h5>
+<p>Disable geomagnetic rotation sensor.</p>
+<h5 id="-public-void-enablegamerotationsensor-"><code>public void enableGameRotationSensor()</code></h5>
+<p>Enable ambient game rotation sensor.</p>
+<h5 id="-public-void-disablegamerotationsensor-"><code>public void disableGameRotationSensor()</code></h5>
+<p>Disable game rotation sensor.</p>
+<h5 id="-public-void-enableallsensors-"><code>public void enableAllSensors()</code></h5>
+<p>Enable all sensors.</p>
+<h5 id="-public-boolean-isaccelerometeravailable-"><code>public boolean isAccelerometerAvailable()</code></h5>
+<p>Checks if is accelerometer available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is accelerometer available</li>
+</ul>
+<h5 id="-public-boolean-islinearaccelerationavailable-"><code>public boolean isLinearAccelerationAvailable()</code></h5>
+<p>Checks if is linear acceleration available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is linear acceleration available</li>
+</ul>
+<h5 id="-public-boolean-isrotationvectoravailable-"><code>public boolean isRotationVectorAvailable()</code></h5>
+<p>Checks if is rotation vector available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is rotation vector available</li>
+</ul>
+<h5 id="-public-boolean-ismagenticfieldavailable-"><code>public boolean isMagenticFieldAvailable()</code></h5>
+<p>Checks if is magentic field available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is magentic field available</li>
+</ul>
+<h5 id="-public-boolean-isorientationavailable-"><code>public boolean isOrientationAvailable()</code></h5>
+<p>Checks if is orientation available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is orientation available</li>
+</ul>
+<h5 id="-public-boolean-isproximityavailable-"><code>public boolean isProximityAvailable()</code></h5>
+<p>Checks if is proximity available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is proximity available</li>
+</ul>
+<h5 id="-public-boolean-islightavailable-"><code>public boolean isLightAvailable()</code></h5>
+<p>Checks if is light available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is light available</li>
+</ul>
+<h5 id="-public-boolean-ispressureavailable-"><code>public boolean isPressureAvailable()</code></h5>
+<p>Checks if is pressure available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is pressure available</li>
+</ul>
+<h5 id="-public-boolean-istemperatureavailable-"><code>public boolean isTemperatureAvailable()</code></h5>
+<p>Checks if is temperature available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is temperature available</li>
+</ul>
+<h5 id="-public-boolean-isgyroscopeavailable-"><code>public boolean isGyroscopeAvailable()</code></h5>
+<p>Checks if is gyroscope available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is gyroscope available</li>
+</ul>
+<h5 id="-public-boolean-isambienttemperatureavailable-"><code>public boolean isAmbientTemperatureAvailable()</code></h5>
+<p>Checks if is ambient temperature available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is ambient temperature available</li>
+</ul>
+<h5 id="-public-boolean-isrelativehumidityavailable-"><code>public boolean isRelativeHumidityAvailable()</code></h5>
+<p>Checks if is relative humidity available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is relative humidity available</li>
+</ul>
+<h5 id="-public-boolean-isstepdetectoravailable-"><code>public boolean isStepDetectorAvailable()</code></h5>
+<p>Checks if is step detector sensor is available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if heart rate sensor is available</li>
+</ul>
+<h5 id="-public-boolean-isstepcounteravailable-"><code>public boolean isStepCounterAvailable()</code></h5>
+<p>Checks if is step counter sensor is available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if step counter sensor is available</li>
+</ul>
+<h5 id="-public-boolean-issignificantmotionavailable-"><code>public boolean isSignificantMotionAvailable()</code></h5>
+<p>Checks if is significant motion sensor is available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if significant motion sensor is available</li>
+</ul>
+<h5 id="-public-boolean-isgeomagneticrotationvectoravailable-"><code>public boolean isGeomagneticRotationVectorAvailable()</code></h5>
+<p>Checks if is geomagnetic rotation vector sensor is available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if geomagnetic rotation vector sensor is available</li>
+</ul>
+<h5 id="-public-boolean-isgamerotationavailable-"><code>public boolean isGameRotationAvailable()</code></h5>
+<p>Checks if is game rotation sensor is available.</p>
+<ul>
+<li><strong>Returns:</strong> true, if game rotation sensor is available</li>
+</ul>
+<h5 id="-public-collection-extends-string-list-"><code>public Collection&lt;? extends String&gt; list()</code></h5>
+<p>List.</p>
+<ul>
+<li><strong>Returns:</strong> the collection&lt;? extends string&gt;</li>
+</ul>
+<h5 id="-public-boolean-isstarted-"><code>public boolean isStarted()</code></h5>
+<p>Checks if is started.</p>
+<ul>
+<li><strong>Returns:</strong> true, if is started</li>
+</ul>
+<h5 id="-public-void-start-"><code>public void start()</code></h5>
+<p>Start services.</p>
+<h5 id="-public-void-stop-"><code>public void stop()</code></h5>
+<p>Stop services.</p>
+<h5 id="-private-boolean-issensorsupported-int-type-"><code>private boolean isSensorSupported(int type)</code></h5>
+<p>Checks if is sensor supported. </p>
+<p>the type</p>
+<ul>
+<li><strong>Parameters:</strong> <code>type</code> — </li>
+<li><strong>Returns:</strong> true, if is sensor supported</li>
+</ul>
+<h5 id="-private-void-findparentintentions-"><code>private void findParentIntentions()</code></h5>
+<p>Find parent intentions.</p>
+<h5 id="-public-void-startservice-"><code>public void startService()</code></h5>
+<p>Start service.</p>
+<h5 id="-public-int-getstatus-"><code>public int getStatus()</code></h5>
+<p>Gets the status.</p>
+<ul>
+<li><strong>Returns:</strong> the status (not used)</li>
+</ul>
+<h5 id="-public-void-stopservice-"><code>public void stopService()</code></h5>
+<p>Stop service.</p>
+<h5 id="-public-string-getservicedescription-"><code>public String getServiceDescription()</code></h5>
+<p>Gets the service description.</p>
+<ul>
+<li><strong>Returns:</strong> the service description</li>
+</ul>
+<h5 id="-public-static-void-getrotationmatrixfromvector-float-r-float-rotationvector-"><code>public static void getRotationMatrixFromVector(float[] R,    float[] rotationVector)</code></h5>
+<p>Gets the rotation matrix from vector. </p>
+<p>the r the rotation vector</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>R</code> — </li>
+<li><code>rotationVector</code> — </li>
+</ul>
+</li>
+<li><strong>Returns:</strong> the rotation matrix from vector</li>
+</ul>
+<h5 id="-public-void-getquaternionfromvector-float-q-float-rv-"><code>public void getQuaternionFromVector(float[] Q, float[] rv)</code></h5>
+<p>Gets the quaternion from vector. </p>
+<p>the q the rv</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>Q</code> — </li>
+<li><code>rv</code> — </li>
+</ul>
+</li>
+<li><strong>Returns:</strong> the quaternion from vector</li>
+</ul>
+<h5 id="-public-float-getorientation-"><code>public float[] getOrientation()</code></h5>
+<p>Gets the orientation.</p>
+<ul>
+<li><strong>Returns:</strong> the orientation</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/assets/scripts/jquery-1.7.2.min.js"><\/script>')</script>
+  <script src="/assets/scripts/highlight.min.js"></script>
+  <script> $(document).ready(function() {$('code').each(function(i, block) {    hljs.highlightBlock(block);  });});</script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/assets/scripts/classie.js"></script>
+  <script src="/assets/scripts/menu.js"></script>
+  <script src="/assets/scripts/responsivegridsystem.js"></script>
+</body>
