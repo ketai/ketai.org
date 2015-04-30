@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description"><meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/styles/html5reset.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/responsivegridsystem.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/6cols.css" media="all">
+    <!-- Responsive Stylesheets -->
+    <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/assets/styles/1024.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/assets/styles/768.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="/assets/styles/480.css">
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+    <script src="/assets/scripts/modernizr-2.5.3-min.js"></script><link rel="stylesheet" type="text/css" href="/assets/styles/menu_sideslide.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/code_block.css" />
+    <link rel="stylesheet" href="/assets/styles/code_example.css">
+    <link rel="stylesheet" href="/assets/styles/search.css">
+    <title>Ketai Library - KetaiSQLite</title>
+  </head>
+</html>
+<body>
+<div class="menu-wrap">
+  <nav class="menu">
+    <div class="icon-list">
+<ul class="menu"> 
+  <div>
+    <li><a href="/">Home</a></li>
+    <li><a href="/get-started/">Get Started</a></li>
+    <li><a href="/examples/">Examples</a></li>
+    <li><a href="/reference/">Reference</a></li>
+    <li><a href="/download/">Download</a></li><br/><script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only><br/>
+    <li><a href="https://github.com/ketai/library" class="misc_link"><i class="fa fa-github"> Github</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/pulls" class="misc_link"><i class="fa fa-code"> Your Help</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/issues" class="misc_link"><i class="fa fa-comment-o"> Forum</i></a></li>
+    <li><a href="https://twitter.com/ketailibrary" class="misc_link"><i class="fa fa-twitter"> Twitter</i></a></li>
+  </div>
+</ul>
+    </div>
+  </nav>
+  <button id="close-button" class="close-button">Close Menu</button>
+</div>
+<button id="open-button" class="menu-button">Open Menu</button>
+<div class="title">
+  <nav class="menu"></nav>
+</div>
+  <div id="wrapper">
+    <div class="title">
+      <h2>Ketai</h2>
+    </div>
+    <div id="maincontentcontainer">
+      <div class="maincontent">
+        <div class="section group">
+          <div class="col span_1_of_6 menubar"><a href="/"><img src="/assets/images/ketai_black.png" class="top"><img src="/assets/images/ketai_v10.png" class="bottom"></a>
+<ul class="menu"> 
+  <div>
+    <li><a href="/">Home</a></li>
+    <li><a href="/get-started/">Get Started</a></li>
+    <li><a href="/examples/">Examples</a></li>
+    <li><a href="/reference/">Reference</a></li>
+    <li><a href="/download/">Download</a></li><br/><script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only><br/>
+    <li><a href="https://github.com/ketai/library" class="misc_link"><i class="fa fa-github"> Github</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/pulls" class="misc_link"><i class="fa fa-code"> Your Help</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/issues" class="misc_link"><i class="fa fa-comment-o"> Forum</i></a></li>
+    <li><a href="https://twitter.com/ketailibrary" class="misc_link"><i class="fa fa-twitter"> Twitter</i></a></li>
+  </div>
+</ul>
+            <hr>
+<h4><b>Other Packages:</b></h4>
+<ul class="sidelist_menu">
+  <li><a href="/reference/cv/">CV</a></li>
+  <li><a href="/reference/camera/">Camera</a></li>
+  <li><a href="/reference/data/">Data</a></li>
+  <li><a href="/reference/net/">Net</a></li>
+  <li><a href="/reference/netbluetooth/">Net Bluetooth</a></li>
+  <li><a href="/reference/netnfc/">Net NFC</a></li>
+  <li><a href="/reference/sensors/">Sensors</a></li>
+  <li><a href="/reference/ui/">UI</a></li>
+</ul>
+          </div>
+          <div class="col span_4_of_6 reference">
+            <h3>Reference</h3><h4 id="ketaisqlite">KetaiSQLite</h4>
+<h5 id="-public-class-ketaisqlite-"><code>public class KetaiSQLite</code></h5>
+<p>The Class KetaiSQLite provides access to the underlying SQLite database that every activity is provided with.</p>
+<h5 id="-private-string-database_name-data-"><code>private String DATABASE_NAME = &quot;data&quot;</code></h5>
+<p>The database name.</p>
+<h5 id="-private-static-final-int-database_version-1-"><code>private static final int DATABASE_VERSION = 1</code></h5>
+<p>The Constant DATABASE_VERSION.</p>
+<h5 id="-private-string-data_root_directory-_data-"><code>private String DATA_ROOT_DIRECTORY = &quot;_data&quot;</code></h5>
+<p>The data root directory.</p>
+<h5 id="-private-context-context-"><code>private Context context</code></h5>
+<p>The context.</p>
+<h5 id="-private-sqlitedatabase-db-"><code>private SQLiteDatabase db</code></h5>
+<p>The db.</p>
+<h5 id="-private-cursor-cursor-"><code>private Cursor cursor</code></h5>
+<p>The cursor.</p>
+<h5 id="-private-sqlitestatement-sqlstatement-"><code>private SQLiteStatement sqlStatement</code></h5>
+<p>The sql statement.</p>
+<h5 id="-public-ketaisqlite-context-context-"><code>public KetaiSQLite(Context context)</code></h5>
+<p>Instantiates a new ketai sqlite object.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>context</code> — the context/PApplet/Activity using this class</li>
+</ul>
+<h5 id="-public-ketaisqlite-context-context-string-dbname-"><code>public KetaiSQLite(Context context, String dbname)</code></h5>
+<p>Instantiates a new ketai sqlite.</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>context</code> — the context</li>
+<li><code>dbname</code> — the database name</li>
+</ul>
+</li>
+</ul>
+<h5 id="-static-public-boolean-load-context-_context-string-filename-string-dbname-"><code>static public boolean load(Context _context, String filename, String dbname)</code></h5>
+<p>Load - loads an external .sql file into the local SQLite database service. Useful for populating data for an activity to use.</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>_context</code> — the _context</li>
+<li><code>filename</code> — the filename</li>
+<li><code>dbname</code> — the dbname</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> true, if successful</li>
+</ul>
+<h5 id="-public-string-getpath-"><code>public String getPath()</code></h5>
+<p>Gets the path of the database</p>
+<ul>
+<li><strong>Returns:</strong> the path of the database</li>
+</ul>
+<h5 id="-public-sqlitedatabase-getdb-"><code>public SQLiteDatabase getDb()</code></h5>
+<p>Gets the db from the sqlite service</p>
+<ul>
+<li><strong>Returns:</strong> the db reference.</li>
+</ul>
+<h5 id="-public-boolean-connect-"><code>public boolean connect()</code></h5>
+<p>Connect to the database.</p>
+<ul>
+<li><strong>Returns:</strong> true, if successful</li>
+</ul>
+<h5 id="-public-void-close-"><code>public void close()</code></h5>
+<p>Close the database.</p>
+<h5 id="-public-void-dispose-"><code>public void dispose()</code></h5>
+<p>Dispose.</p>
+<h5 id="-public-boolean-execute-string-_sql-"><code>public boolean execute(String _sql)</code></h5>
+<p>Execute an SQL statement</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_sql</code> — the SQL statement to execute.</li>
+<li><strong>Returns:</strong> true, if successful</li>
+</ul>
+<h5 id="-public-boolean-query-string-_query-"><code>public boolean query(String _query)</code></h5>
+<p>Query the database.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_query</code> — the query string</li>
+<li><strong>Returns:</strong> true, if successful</li>
+</ul>
+<h5 id="-public-boolean-next-"><code>public boolean next()</code></h5>
+<p>Next - move to the next object in our last result set.</p>
+<ul>
+<li><strong>Returns:</strong> true, if successful</li>
+</ul>
+<h5 id="-public-double-getdouble-int-_col-"><code>public double getDouble(int _col)</code></h5>
+<p>Gets the double value from a column in our resultset</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_col</code> — the column/field index number</li>
+<li><strong>Returns:</strong> the double</li>
+</ul>
+<h5 id="-public-double-getdouble-string-field-"><code>public double getDouble(String field)</code></h5>
+<p>Gets the double value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>field</code> — the field name</li>
+<li><strong>Returns:</strong> the double</li>
+</ul>
+<h5 id="-public-float-getfloat-int-_col-"><code>public float getFloat(int _col)</code></h5>
+<p>Gets the float value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_col</code> — the column index number</li>
+<li><strong>Returns:</strong> the float</li>
+</ul>
+<h5 id="-public-float-getfloat-string-field-"><code>public float getFloat(String field)</code></h5>
+<p>Gets the float value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>field</code> — the field mame</li>
+<li><strong>Returns:</strong> the float</li>
+</ul>
+<h5 id="-public-int-getint-int-_col-"><code>public int getInt(int _col)</code></h5>
+<p>Gets the int value from a column index in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_col</code> — the column index number</li>
+<li><strong>Returns:</strong> the int</li>
+</ul>
+<h5 id="-public-int-getint-string-field-"><code>public int getInt(String field)</code></h5>
+<p>Gets the int value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>field</code> — the field name</li>
+<li><strong>Returns:</strong> the int</li>
+</ul>
+<h5 id="-public-long-getlong-int-_col-"><code>public long getLong(int _col)</code></h5>
+<p>Gets the long value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_col</code> — the column/field index number</li>
+<li><strong>Returns:</strong> the long</li>
+</ul>
+<h5 id="-public-long-getlong-string-field-"><code>public long getLong(String field)</code></h5>
+<p>Gets the long value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>field</code> — the field/column name</li>
+<li><strong>Returns:</strong> the long</li>
+</ul>
+<h5 id="-public-byte-getblob-int-_col-"><code>public byte[] getBlob(int _col)</code></h5>
+<p>Gets the blob value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_col</code> — the column/field index number</li>
+<li><strong>Returns:</strong> the blob</li>
+</ul>
+<h5 id="-public-byte-getblob-string-field-"><code>public byte[] getBlob(String field)</code></h5>
+<p>Gets the blob value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>field</code> — the field/column name</li>
+<li><strong>Returns:</strong> the blob</li>
+</ul>
+<h5 id="-public-string-getstring-int-_col-"><code>public String getString(int _col)</code></h5>
+<p>Gets the string value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_col</code> — the column/field index number</li>
+<li><strong>Returns:</strong> the string</li>
+</ul>
+<h5 id="-public-string-getstring-string-field-"><code>public String getString(String field)</code></h5>
+<p>Gets the string value from a column in our resultset.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>field</code> — the field/column name</li>
+<li><strong>Returns:</strong> the string</li>
+</ul>
+<h5 id="-public-string-gettables-"><code>public String[] getTables()</code></h5>
+<p>Gets the table names in our database.</p>
+<ul>
+<li><strong>Returns:</strong> the names of the tables in the database</li>
+</ul>
+<h5 id="-public-string-getfields-string-table-"><code>public String[] getFields(String table)</code></h5>
+<p>Gets the field names</p>
+<ul>
+<li><strong>Parameters:</strong> <code>table</code> — the table name</li>
+<li><strong>Returns:</strong> the fields</li>
+</ul>
+<h5 id="-public-string-getfieldmin-string-table-string-field-"><code>public String getFieldMin(String table, String field)</code></h5>
+<p>Gets the field min value</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>table</code> — the table name</li>
+<li><code>field</code> — the field name</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> the field min value</li>
+</ul>
+<h5 id="-public-string-getfieldmax-string-table-string-field-"><code>public String getFieldMax(String table, String field)</code></h5>
+<p>Gets the field max value.</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>table</code> — the table name</li>
+<li><code>field</code> — the field name</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> the field max value</li>
+</ul>
+<h5 id="-public-long-getrecordcount-string-table-"><code>public long getRecordCount(String table)</code></h5>
+<p>Gets the record count for the table.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>table</code> — the table name</li>
+<li><strong>Returns:</strong> the record count</li>
+</ul>
+<h5 id="-public-long-getdatacount-"><code>public long getDataCount()</code></h5>
+<p>Gets the data count (records in all tables in the database)</p>
+<ul>
+<li><strong>Returns:</strong> the data count</li>
+</ul>
+<h5 id="-public-boolean-tableexists-string-_table-"><code>public boolean tableExists(String _table)</code></h5>
+<p>Check to see if the table exists.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_table</code> — the table name</li>
+<li><strong>Returns:</strong> true, if successful</li>
+</ul>
+<h5 id="-public-void-exportdata-string-_targetdirectory-throws-ioexception-"><code>public void exportData(String _targetDirectory) throws IOException</code></h5>
+<p>Export data to a text file (tab delimited).</p>
+<ul>
+<li><strong>Parameters:</strong> <code>_targetDirectory</code> — the target directory</li>
+<li><strong>Exceptions:</strong> <code>IOException</code> — Signals that an I/O exception has occurred.</li>
+</ul>
+<h5 id="-public-void-deletealldata-"><code>public void deleteAllData()</code></h5>
+<p>Delete all data in our database. Deletes all tables.</p>
+<h5 id="-private-void-writetofile-string-data-string-_dir-string-exportfilename-"><code>private void writeToFile(String data, String _dir, String exportFileName)</code></h5>
+<p>Write to file.</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>data</code> — the data</li>
+<li><code>_dir</code> — the _dir</li>
+<li><code>exportFileName</code> — the export file name</li>
+</ul>
+</li>
+</ul>
+<h5 id="-private-class-openhelper-extends-sqliteopenhelper-"><code>private class OpenHelper extends SQLiteOpenHelper</code></h5>
+<p>The Class OpenHelper.</p>
+<h5 id="-openhelper-context-context-"><code>OpenHelper(Context context)</code></h5>
+<p>Instantiates a new open helper.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>context</code> — the context</li>
+</ul>
+<h5 id="-openhelper-context-context-string-dbname-"><code>OpenHelper(Context context, String dbname)</code></h5>
+<p>Instantiates a new open helper.</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>context</code> — the context</li>
+<li><code>dbname</code> — the dbname</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/assets/scripts/jquery-1.7.2.min.js"><\/script>')</script>
+  <script src="/assets/scripts/highlight.min.js"></script>
+  <script> $(document).ready(function() {$('code').each(function(i, block) {    hljs.highlightBlock(block);  });});</script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/assets/scripts/classie.js"></script>
+  <script src="/assets/scripts/menu.js"></script>
+  <script src="/assets/scripts/responsivegridsystem.js"></script>
+</body>
