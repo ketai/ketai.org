@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description"><meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/styles/html5reset.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/responsivegridsystem.css" media="all">
+    <link rel="stylesheet" href="/assets/styles/6cols.css" media="all">
+    <!-- Responsive Stylesheets -->
+    <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/assets/styles/1024.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/assets/styles/768.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="/assets/styles/480.css">
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+    <script src="/assets/scripts/modernizr-2.5.3-min.js"></script><link rel="stylesheet" type="text/css" href="/assets/styles/menu_sideslide.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/code_block.css" />
+    <link rel="stylesheet" href="/assets/styles/code_example.css">
+    <link rel="stylesheet" href="/assets/styles/search.css">
+    <title>Ketai Library - SmartPoster</title>
+  </head>
+</html>
+<body>
+<div class="menu-wrap">
+  <nav class="menu">
+    <div class="icon-list">
+<ul class="menu"> 
+  <div>
+    <li><a href="/">Home</a></li>
+    <li><a href="/get-started/">Get Started</a></li>
+    <li><a href="/examples/">Examples</a></li>
+    <li><a href="/reference/">Reference</a></li>
+    <li><a href="/download/">Download</a></li><br/><script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only><br/>
+    <li><a href="https://github.com/ketai/library" class="misc_link"><i class="fa fa-github"> Github</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/pulls" class="misc_link"><i class="fa fa-code"> Your Help</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/issues" class="misc_link"><i class="fa fa-comment-o"> Forum</i></a></li>
+    <li><a href="https://twitter.com/ketailibrary" class="misc_link"><i class="fa fa-twitter"> Twitter</i></a></li>
+  </div>
+</ul>
+    </div>
+  </nav>
+  <button id="close-button" class="close-button">Close Menu</button>
+</div>
+<button id="open-button" class="menu-button">Open Menu</button>
+<div class="title">
+  <nav class="menu"></nav>
+</div>
+  <div id="wrapper">
+    <div class="title">
+      <h2>Ketai</h2>
+    </div>
+    <div id="maincontentcontainer">
+      <div class="maincontent">
+        <div class="section group">
+          <div class="col span_1_of_6 menubar"><a href="/"><img src="/assets/images/ketai_black.png" class="top"><img src="/assets/images/ketai_v10.png" class="bottom"></a>
+<ul class="menu"> 
+  <div>
+    <li><a href="/">Home</a></li>
+    <li><a href="/get-started/">Get Started</a></li>
+    <li><a href="/examples/">Examples</a></li>
+    <li><a href="/reference/">Reference</a></li>
+    <li><a href="/download/">Download</a></li><br/><script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only><br/>
+    <li><a href="https://github.com/ketai/library" class="misc_link"><i class="fa fa-github"> Github</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/pulls" class="misc_link"><i class="fa fa-code"> Your Help</i></a></li>
+    <li><a href="https://github.com/ketai/ketai/issues" class="misc_link"><i class="fa fa-comment-o"> Forum</i></a></li>
+    <li><a href="https://twitter.com/ketailibrary" class="misc_link"><i class="fa fa-twitter"> Twitter</i></a></li>
+  </div>
+</ul>
+            <hr>
+<h4><b>Other Packages:</b></h4>
+<ul class="sidelist_menu">
+  <li><a href="/reference/cv/">CV</a></li>
+  <li><a href="/reference/camera/">Camera</a></li>
+  <li><a href="/reference/data/">Data</a></li>
+  <li><a href="/reference/net/">Net</a></li>
+  <li><a href="/reference/netbluetooth/">Net Bluetooth</a></li>
+  <li><a href="/reference/netnfc/">Net NFC</a></li>
+  <li><a href="/reference/sensors/">Sensors</a></li>
+  <li><a href="/reference/ui/">UI</a></li>
+</ul>
+          </div>
+          <div class="col span_4_of_6 reference">
+            <h3>Reference</h3><h4 id="smartposter">SmartPoster</h4>
+<h5 id="-public-class-smartposter-implements-parsedndefrecord-"><code>public class SmartPoster implements ParsedNdefRecord</code></h5>
+<p>A representation of an NFC Forum &quot;Smart Poster&quot;.</p>
+<h5 id="-private-final-textrecord-mtitlerecord-"><code>private final TextRecord mTitleRecord</code></h5>
+<p>NFC Forum Smart Poster Record Type Definition section 3.2.1. </p>
+<p>&quot;The Title record for the service (there can be many of these in different languages, but a language MUST NOT be repeated). This record is optional.&quot;</p>
+<h5 id="-private-final-urirecord-murirecord-"><code>private final UriRecord mUriRecord</code></h5>
+<p>NFC Forum Smart Poster Record Type Definition section 3.2.1. </p>
+<p>&quot;The URI record. This is the core of the Smart Poster, and all other records are just metadata about this record. There MUST be one URI record and there MUST NOT be more than one.&quot;</p>
+<h5 id="-public-urirecord-geturirecord-"><code>public UriRecord getUriRecord()</code></h5>
+<p>Gets the uri record.</p>
+<ul>
+<li><strong>Returns:</strong> the uri record</li>
+</ul>
+<h5 id="-public-textrecord-gettitle-"><code>public TextRecord getTitle()</code></h5>
+<p>Returns the title of the smart poster. This may be {@code null}.</p>
+<ul>
+<li><strong>Returns:</strong> the title</li>
+</ul>
+<h5 id="-public-static-smartposter-parse-ndefrecord-record-"><code>public static SmartPoster parse(NdefRecord record)</code></h5>
+<p>Parses the.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>record</code> — the record</li>
+<li><strong>Returns:</strong> the smart poster</li>
+</ul>
+<h5 id="-public-static-smartposter-parse-ndefrecord-recordsraw-"><code>public static SmartPoster parse(NdefRecord[] recordsRaw)</code></h5>
+<p>Parses the.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>recordsRaw</code> — the records raw</li>
+<li><strong>Returns:</strong> the smart poster</li>
+</ul>
+<h5 id="-public-static-boolean-isposter-ndefrecord-record-"><code>public static boolean isPoster(NdefRecord record)</code></h5>
+<p>Checks if is poster.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>record</code> — the record</li>
+<li><strong>Returns:</strong> true, if is poster</li>
+</ul>
+<h5 id="-private-static-t-t-getfirstifexists-iterable-elements-class-t-type-"><code>private static &lt;T&gt; T getFirstIfExists(Iterable&lt;?&gt; elements, Class&lt;T&gt; type)</code></h5>
+<p>Returns the first element of {@code elements} which is an instance of. </p>
+<p>{@code type}, or {@code null} if no such element exists.</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>&lt;T&gt;</code> — the generic type</li>
+<li><code>elements</code> — the elements</li>
+<li><code>type</code> — the type</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> the first if exists</li>
+</ul>
+<h5 id="-private-enum-recommendedaction-"><code>private enum RecommendedAction</code></h5>
+<p>The Enum RecommendedAction.</p>
+<h5 id="-unknown-byte-1-"><code>UNKNOWN((byte) -1),</code></h5>
+<p>The unknown.</p>
+<h5 id="-do_action-byte-0-"><code>DO_ACTION((byte) 0),</code></h5>
+<p>The do action.</p>
+<h5 id="-save_for_later-byte-1-"><code>SAVE_FOR_LATER((byte) 1),</code></h5>
+<p>The save for later.</p>
+<h5 id="-open_for_editing-byte-2-"><code>OPEN_FOR_EDITING(     (byte) 2)</code></h5>
+<p>The open for editing.</p>
+<h5 id="-private-final-byte-maction-"><code>private final byte mAction</code></h5>
+<p>The m action.</p>
+<h5 id="-private-recommendedaction-byte-val-"><code>private RecommendedAction(byte val)</code></h5>
+<p>Instantiates a new recommended action.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>val</code> — the val</li>
+</ul>
+<h5 id="-private-byte-getbyte-"><code>private byte getByte()</code></h5>
+<p>Gets the byte.</p>
+<ul>
+<li><strong>Returns:</strong> the byte</li>
+</ul>
+<h5 id="-private-static-ndefrecord-getbytype-byte-type-ndefrecord-records-"><code>private static NdefRecord getByType(byte[] type, NdefRecord[] records)</code></h5>
+<p>Gets the by type.</p>
+<ul>
+<li><strong>Parameters:</strong><ul>
+<li><code>type</code> — the type</li>
+<li><code>records</code> — the records</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> the by type</li>
+</ul>
+<h5 id="-private-static-final-byte-action_record_type-new-byte-"><code>private static final byte[] ACTION_RECORD_TYPE = new byte[]</code></h5>
+<p>The Constant ACTION_RECORD_TYPE.</p>
+<h5 id="-private-static-recommendedaction-parserecommendedaction-ndefrecord-records-"><code>private static RecommendedAction parseRecommendedAction(NdefRecord[] records)</code></h5>
+<p>Parses the recommended action.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>records</code> — the records</li>
+<li><strong>Returns:</strong> the recommended action</li>
+</ul>
+<h5 id="-private-static-final-byte-type_type-new-byte-"><code>private static final byte[] TYPE_TYPE = new byte[]</code></h5>
+<p>The Constant TYPE_TYPE.</p>
+<h5 id="-private-static-string-parsetype-ndefrecord-records-"><code>private static String parseType(NdefRecord[] records)</code></h5>
+<p>Parses the type.</p>
+<ul>
+<li><strong>Parameters:</strong> <code>records</code> — the records</li>
+<li><strong>Returns:</strong> the string</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/assets/scripts/jquery-1.7.2.min.js"><\/script>')</script>
+  <script src="/assets/scripts/highlight.min.js"></script>
+  <script> $(document).ready(function() {$('code').each(function(i, block) {    hljs.highlightBlock(block);  });});</script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/assets/scripts/classie.js"></script>
+  <script src="/assets/scripts/menu.js"></script>
+  <script src="/assets/scripts/responsivegridsystem.js"></script>
+</body>
