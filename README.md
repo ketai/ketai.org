@@ -1,7 +1,6 @@
 # ke:tai Website Source
 The source of the ketai.org reference website built in [Woods]("https://github.com/studiomoniker/woods") a Node.js file based CMS
 
----
 ### Dependencies
 1. [Node.js](https://nodejs.org/)
 2. [npm](https://www.npmjs.com/) (Node Package Manager : Installed as a part of Node)
