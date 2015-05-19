@@ -38,6 +38,6 @@ The directory to locate the files for Woods in OSX : /usr/local/lib/node_modules
 
 By default the content is located in the example subfolder.
 
-To export static HTML Pages: 
+To export the static HTML Pages: 
 
 		woods -e /specify/the/path/of/your/folder
