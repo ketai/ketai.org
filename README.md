@@ -25,7 +25,7 @@ The source of the ketai.org reference website built in [Woods]("https://github.c
 ---
 
 ### Installing Woods in OSX
-Open terminal in OSX and enter the following command :
+Open the terminal in OSX and enter the following command :
 
     npm install woods -g
     woods
