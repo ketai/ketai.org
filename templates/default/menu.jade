@@ -7,7 +7,15 @@ ul.menu
       else
         li: a(href=child.url) #{child.title}
     br
-    <script>(function() {var cx = '000151488356480034415:ixgzbzp0hcq';    var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +'//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:searchbox-only></gcse:searchbox-only>
+    
+    script(src="/assets/scripts/google_search.js")
+    <gcse:search enableAutoComplete="true"></gcse:search>
+    //- #custom-templates
+    //-     //- input(type="text", name="user")
+    //-     input(class="typeahead" type="text" placeholder="Search")
+    
+    
+    
     br
     li: a.misc_link(href="https://github.com/ketai/library"): i.fa.fa-github  Github
     li: a.misc_link(href="https://github.com/ketai/ketai/pulls"): i.fa.fa-code  Your Help
