@@ -1,22 +1,22 @@
-####KetaiKeyboard
+#### KetaiKeyboard
 
-##### `public class KetaiKeyboard`
+##### ` class KetaiKeyboard`
 
 The KetaiKeyboard class allows the soft keyboard to be managed.
 
-##### `static public void toggle(Activity parent)`
+##### `static  void toggle(PApplet parent)`
 
 Toggle.
 
  * **Parameters:** `parent` — the PApplet/sketch
 
-##### `static public void show(Activity parent)`
+##### `static  void show(PApplet parent)`
 
 Show.
 
  * **Parameters:** `parent` — the PApplet/sketch
 
-##### `static public void hide(Activity parent)`
+##### `static  void hide(PApplet parent)`
 
 Hide.
 

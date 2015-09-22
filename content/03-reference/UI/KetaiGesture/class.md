@@ -1,6 +1,6 @@
-####KetaiGesture
+#### KetaiGesture
 
-##### `public class KetaiGesture implements OnGestureListener, OnDoubleTapListener`
+##### ` class KetaiGesture implements OnGestureListener, OnDoubleTapListener`
 
 Provides gesture recognition services to a processing sketch. To receive gesture events a sketch can define the following methods:<br /><br /> 
 
@@ -30,29 +30,21 @@ The cursors.
 
 The pcursors.
 
-##### `public KetaiGesture(PApplet _parent)`
+##### ` KetaiGesture(PApplet _parent)`
 
 Instantiates a new ketai gesture.
 
  * **Parameters:** `_parent` — the PApplet/sketch
 
-##### `public void touchEvent(TouchEvent e)`
+##### ` void touchEvent(TouchEvent e)`
 
 Touch event.
 
  * **Parameters:** `e` — the e
 
-##### `public boolean surfaceTouchEvent(MotionEvent event)`
+##### ` boolean surfaceTouchEvent(MotionEvent event)`
 
 Surface touch event.
 
  * **Parameters:** `event` — the event
  * **Returns:** true, if successful
-
-##### `private void findParentIntentions()`
-
-Find parent intentions.
-
-##### `private synchronized void analyse()`
-
-Analyse.

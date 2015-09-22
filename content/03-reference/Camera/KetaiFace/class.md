@@ -1,18 +1,18 @@
-####KetaiFace
+#### KetaiFace
 
-##### `public class KetaiFace extends Face`
+##### ` class KetaiFace extends Face`
 
 The Class KetaiFace wrap the internal android Face class.
 
-##### `public PVector leftEye, rightEye, mouth, center`
+##### ` PVector leftEye, rightEye, mouth, center`
 
 The center.
 
-##### `public int id, score, width, height`
+##### ` int id, score, width, height`
 
 The height.
 
-##### `public KetaiFace(Face f, int frameWidth, int frameHeight)`
+##### ` KetaiFace(Face f, int frameWidth, int frameHeight)`
 
 Instantiates a new ketai face.
 

@@ -1,10 +1,10 @@
-####KetaiAlertDialog
+#### KetaiAlertDialog
 
-##### `public class KetaiAlertDialog`
+##### ` class KetaiAlertDialog`
 
 The KetaiAlertDialog.
 
-##### `public static void popup(Activity _parent, String _title, String _message)`
+##### ` static void popup(PApplet _parent, String _title, String _message)`
 
 Popup.
 

@@ -1,36 +1,12 @@
-####KetaiCamera
+#### KetaiCamera
 
-##### `public class KetaiCamera extends PImage`
+##### ` class KetaiCamera extends PImage`
 
 The Class KetaiCamera allows the processing sketches to access android cameras through an object modeled after the desktop/java processing Camera class.
 
-##### `private Camera camera`
-
-The camera.
-
-##### `private int[] myPixels`
-
-The my pixels.
-
-##### `protected Method onPreviewEventMethod, onPreviewEventMethodPImage,    onSavePhotoEventMethod, onFaceDetectionEventMethod`
-
-The on face detection event method.
-
-##### `private int frameWidth, frameHeight, cameraFPS, cameraID`
-
-The camera id.
-
-##### `private int photoWidth, photoHeight`
-
-The photo height.
-
-##### `public boolean isStarted, requestedStart, enableFlash,    isRGBPreviewSupported`
+##### ` boolean isStarted, requestedStart, enableFlash,    isRGBPreviewSupported`
 
 The is rgb preview supported.
-
-##### `private String savePhotoPath = ""`
-
-The save photo path.
 
 ##### `KetaiCamera self`
 
@@ -52,7 +28,7 @@ The supports face detection.
 
 The m texture.
 
-##### `public KetaiCamera(PApplet pParent, int _width, int _height,    int _framesPerSecond)`
+##### ` KetaiCamera(PApplet pParent, int _width, int _height,    int _framesPerSecond)`
 
 Instantiates a new ketai camera. 
 
@@ -64,11 +40,11 @@ reference to the main sketch(Activity) width of the camera image height of the c
    * `_height` — 
    * `_framesPerSecond` — 
 
-##### `public void manualSettings()`
+##### ` void manualSettings()`
 
 Manual settings - attempt to disable "auto" adjustments (like focus, white balance, etc).
 
-##### `public void setZoom(int _zoom)`
+##### ` void setZoom(int _zoom)`
 
 Sets the zoom. 
 
@@ -76,23 +52,23 @@ the new zoom
 
  * **Parameters:** `_zoom` — 
 
-##### `public int getZoom()`
+##### ` int getZoom()`
 
 Gets the zoom.
 
  * **Returns:** the zoom
 
-##### `public void autoSettings()`
+##### ` void autoSettings()`
 
 Auto settings - set camera to use auto adjusting settings
 
-##### `public String dump()`
+##### ` String dump()`
 
 Dump out camera settings into a single string.
 
  * **Returns:** the string
 
-##### `public void setSaveDirectory(String _dirname)`
+##### ` void setSaveDirectory(String _dirname)`
 
 Sets the save directory for image/photo settings 
 
@@ -100,19 +76,19 @@ the new save directory
 
  * **Parameters:** `_dirname` — 
 
-##### `public int getPhotoWidth()`
+##### ` int getPhotoWidth()`
 
 Gets the photo width which may be different from the camera preview width since photo quality can be better than preview/camera image.
 
  * **Returns:** the photo width
 
-##### `public int getPhotoHeight()`
+##### ` int getPhotoHeight()`
 
 Gets the photo height which may be different from the camera preview width since photo quality can be better than preview/camera image.
 
  * **Returns:** the photo height
 
-##### `public void setPhotoSize(int width, int height)`
+##### ` void setPhotoSize(int width, int height)`
 
 Sets the photo dimensions. Photo dimensions default to camera preview dimensions but can be set for higher quality. Typically camera preview dimensions should be smaller than photo dimensions. 
 
@@ -122,15 +98,15 @@ the width the height
    * `width` — 
    * `height` — 
 
-##### `public void enableFlash()`
+##### ` void enableFlash()`
 
 Enable flash.
 
-##### `public void disableFlash()`
+##### ` void disableFlash()`
 
 Disable flash.
 
-##### `public void setCameraID(int _id)`
+##### ` void setCameraID(int _id)`
 
 Sets the camera id for devices that support multiple cameras. 
 
@@ -138,31 +114,31 @@ the new camera id
 
  * **Parameters:** `_id` — 
 
-##### `public int getCameraID()`
+##### ` int getCameraID()`
 
 Gets the camera id.
 
  * **Returns:** the camera id
 
-##### `public boolean start()`
+##### ` boolean start()`
 
 Start the camera preview. Call this in order to start the camera preview updates. This will deliver pixels from the camera to the parent sketch.
 
  * **Returns:** true, if successful
 
-##### `public boolean isFlashEnabled()`
+##### ` boolean isFlashEnabled()`
 
 Checks if flash is enabled.
 
  * **Returns:** true, if flash is enabled
 
-##### `public boolean savePhoto()`
+##### ` boolean savePhoto()`
 
 Saves photo to the file system using default settings (
 
  * **Returns:** true, if successful
 
-##### `public boolean savePhoto(String _filename)`
+##### ` boolean savePhoto(String _filename)`
 
 Save photo to the file system using the name provided. 
 
@@ -171,15 +147,15 @@ the _filename
  * **Parameters:** `_filename` — 
  * **Returns:** true, if successful
 
-##### `public void resume()`
+##### ` void resume()`
 
 Resume.
 
-##### `public synchronized void read()`
+##### ` synchronized void read()`
 
 Read the pixels from the camera.
 
-##### `public boolean isStarted()`
+##### ` boolean isStarted()`
 
 Checks if the camera has been started.
 
@@ -193,19 +169,7 @@ The last processed frame.
 
 The previewcallback.
 
-##### `private AutoFocusCallback autofocusCB = new AutoFocusCallback()`
-
-The autofocus cb.
-
-##### `private PictureCallback jpegCallback = new PictureCallback()`
-
-The jpeg callback.
-
-##### `private OnScanCompletedListener myScannerCallback = new OnScanCompletedListener()`
-
-The my scanner callback.
-
-##### `public void addToMediaLibrary(String _file)`
+##### ` void addToMediaLibrary(String _file)`
 
 Adds the file to media library so that other applications can access it. 
 
@@ -213,19 +177,19 @@ the _file
 
  * **Parameters:** `_file` — 
 
-##### `public void pause()`
+##### ` void pause()`
 
 Pause the class as since the activity is being paused.
 
-##### `public void stop()`
+##### ` void stop()`
 
 Stop the camera from receiving updates.
 
-##### `public void dispose()`
+##### ` void dispose()`
 
 Dispose.
 
-##### `public void decodeYUV420SP(byte[] yuv420sp)`
+##### ` void decodeYUV420SP(byte[] yuv420sp)`
 
 Decode yuv420 sp. 
 
@@ -233,23 +197,19 @@ the yuv420sp
 
  * **Parameters:** `yuv420sp` — 
 
-##### `public int getNumberOfCameras()`
+##### ` int getNumberOfCameras()`
 
 Gets the number of cameras.
 
  * **Returns:** the number of cameras
 
-##### `public Collection<? extends String> list()`
+##### ` Collection<? extends String> list()`
 
 List available cameras.
 
  * **Returns:** the collection<? extends string>
 
-##### `private void determineCameraParameters()`
-
-Determine camera parameters based on requested parameters. Tries to get the closest resolution settings.
-
-##### `public void onFrameAvailable(SurfaceTexture arg0)`
+##### ` void onFrameAvailable(SurfaceTexture arg0)`
 
 On frame available callback, used by the camera service. 
 

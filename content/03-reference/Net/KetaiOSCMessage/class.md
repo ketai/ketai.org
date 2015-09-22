@@ -1,10 +1,10 @@
-####KetaiOSCMessage
+#### KetaiOSCMessage
 
-##### `public class KetaiOSCMessage extends OscMessage`
+##### ` class KetaiOSCMessage extends OscMessage`
 
 The Class KetaiOSCMessage.
 
-##### `public KetaiOSCMessage(byte[] _data)`
+##### ` KetaiOSCMessage(byte[] _data)`
 
 Instantiates a new ketai osc message.
 

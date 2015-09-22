@@ -4,7 +4,7 @@ title: Download
 To download and install the latest version for the library, follow the instructions below.
 <hr>
 
-####Install from Processing IDE
+#### Install from Processing IDE
 1. Go to Sketch in the Menu bar
 
 2. Add Library 
@@ -15,7 +15,7 @@ To download and install the latest version for the library, follow the instructi
 
 <hr>
 
-####[<i class="fa fa-download"></i> Manually Install v11 ](http://ketailibrary.org/ketai.zip)
+#### [<i class="fa fa-download"></i> Manually Install v12 ](http://ketailibrary.org/ketai.zip)
 1. Navigate to the Processing sketchbook folder.
 
 2. Go to libraries
@@ -26,7 +26,7 @@ To download and install the latest version for the library, follow the instructi
 
 <div class="hover_img">
 	<a href="http://ketailibrary.org/ketai.zip">
-		<img src="ketai_v11_bw.png" class="top">
+		<img src="ketai_bw.png" class="top">
 		<img src="ketai_color.png" class="bottom">
 	</a>
 </div>
@@ -39,7 +39,15 @@ To download and install the latest version for the library, follow the instructi
 
 <hr>
 
-##Revisions
+## Revisions
+
+#### v12 updates
+------------
+Test Platforms: Android 4.4.2, Android 5.1.1
+Test Hardware: Nexus 7, Galaxy 3s, Nexus 6
+- updated for version 3 of processing
+- NOTE: Currently NFC feature does not function due to a changes in PApplet(extending Fragment instead of Activity)
+
 
 #### v11 updates
 ------------
