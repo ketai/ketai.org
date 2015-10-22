@@ -1,0 +1,9 @@
+//- h4: b !{page.type == 'reference' ? 'Packages:' : 'Other Packages:'}
+div.section.group
+	div.sidelist
+		for child in page.get('/exhibition').children
+			div.grid-item.box: a(href=child.url)
+				div.project
+					p #{child.title}
+					img(src=child.url+"/thumbnail.jpg")
+		

@@ -24,6 +24,19 @@
 .span_1_of_6 {
   	width: 15.33%;
 }
+	
+.span_3_of_3 {
+	width: 100%; 
+}
+
+.span_2_of_3 {
+	width: 66.13%; 
+}
+
+.span_1_of_3 {
+	width: 32.26%; 
+}
+
 
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
@@ -46,5 +59,14 @@
 	}
 	.span_1_of_6 {
 		width: 100%; 
+	}
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
 	}
 }

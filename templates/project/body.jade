@@ -1,0 +1,11 @@
+h4: !=markdown(page.title)
+for image in page.images
+  if image.filename == 'thumbnail.jpg'
+    !=image.thumb({width: 800})
+br
+!=markdown(page.link)
+
+hr
+h4 Description
+!=markdown(page.description)
+hr

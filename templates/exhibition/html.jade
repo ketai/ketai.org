@@ -12,7 +12,6 @@ html(lang='en')
     <link rel="stylesheet" href="/assets/styles/responsivegridsystem.css" media="all">
     <link rel="stylesheet" href="/assets/styles/6cols.css" media="all">
     
-
     <!-- Responsive Stylesheets -->
     <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/assets/styles/1024.css">
     <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/assets/styles/768.css">
@@ -20,21 +19,31 @@ html(lang='en')
 
     <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
     <script src="/assets/scripts/modernizr-2.5.3-min.js"></script>
+    <script src="/assets/scripts/jquery-2.1.4.min.js"></script>
+    
+    
+    
     //- <link rel="stylesheet" type="text/css" href="/assets/styles/demo.css" />
     <link rel="stylesheet" type="text/css" href="/assets/styles/menu_sideslide.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/styles/code_block.css" />
     
-    //- link(rel="stylesheet", href="/assets/styles/custom_code.css")
+    link(rel="stylesheet", href="/assets/styles/custom_code.css")
     link(rel="stylesheet", href="/assets/styles/code_example.css")
     link(rel="stylesheet", href="/assets/styles/search.css")
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.0b2.120519/jquery.infinitescroll.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js"></script>
+    
+    
     //- link(rel="stylesheet", href="/assets/lib/codemirror.css")
     //- link(rel="stylesheet", href="/assets/theme/midnight.css")
     //- script(type='text/javascript', src='/assets/lib/codemirror.js')
     //- script(type='text/javascript', src='/assets/mode/javascript/javascript.js')
     //- script(type='text/javascript', src='/assets/addon/selection/active-line.js')
     //- script(type='text/javascript', src='/assets/addon/edit/matchbrackets.js')
-    
+    //- link(rel="stylesheet", href="/assets/styles/code_example.css")
 
     title Ketai Library - #{page.title}
 body
@@ -52,7 +61,7 @@ body
             hr
             !=template('related-package')
           div.col.span_4_of_6.reference
-            h3 Reference
+            h3 Exhibition
             !=template('body')
   
   //- script(type='text/javascript').
@@ -62,17 +71,15 @@ body
   //-       matchBrackets: true
   //-     });
   //-     editor.setOption("theme", "midnight");
-  
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/assets/scripts/jquery-1.7.2.min.js"><\/script>')</script>
+
 
   <script src="/assets/scripts/highlight.min.js"></script>
-  <script> $(document).ready(function() {$('code').each(function(i, block) {    hljs.highlightBlock(block);  });});</script>
   <script>hljs.initHighlightingOnLoad();</script>
   
-  
-  
-        
+  <script src="/assets/scripts/scroll.js"></script>  
+  //- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  //- <script>window.jQuery || document.write('<script src="/assets/scripts/jquery-1.7.2.min.js"><\/script>')</script>
+    
   <script src="/assets/scripts/classie.js"></script>
   <script src="/assets/scripts/menu.js"></script>
   <script src="/assets/scripts/responsivegridsystem.js"></script>

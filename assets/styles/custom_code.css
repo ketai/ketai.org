@@ -1,17 +1,65 @@
-.reference{
-	margin-top: 22px;
-	margin-left: 230px;
-	/*margin-left: 16.93%;*/
-	/*padding-top: 20px;*/
-}
-.reference code{
-	font-size: 1.5em;
-	font-weight: normal;
-	/*letter-spacing: -0.3px;*/
-	background: rgb(208, 255, 209);
-	/*color: #0F0F0F;*/
-	/*padding: 5px 0px;*/
-	word-wrap: break-word;
-	margin-bottom: 20px;
+.reference {
+    margin-top: 22px;
+    margin-left: 230px;
+    /*margin-left: 16.93%;*/
+    /*padding-top: 20px;*/
 }
 
+.reference code {
+    font-size: 1.5em;
+    font-weight: normal;
+    /*letter-spacing: -0.3px;*/
+    background: rgb(208, 255, 209);
+    /*color: #0F0F0F;*/
+    /*padding: 5px 0px;*/
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.project {
+    /*width: 27%;*/
+    width: 230px;
+    margin: 10px;
+    float: left;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.project:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+    border: none;
+}
+
+.project.img:hover {
+    color: #fff;
+}
+
+.scroll {
+    height: 100%;
+    /*overflow: scroll;*/
+}
+
+.sidelist {
+    /*height: 400px;*/
+    /*overflow: hidden;*/
+}
+
+@media only screen and (max-width: 720px) {
+    .project {
+        width: 45%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .project {
+        width: 98%;
+        padding: 3px;
+    }
+}
