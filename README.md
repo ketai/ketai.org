@@ -1,6 +1,25 @@
 # ke:tai Website Source
 The source of the ketai.org reference website built in [Woods]("https://github.com/studiomoniker/woods"), a Node.js file based CMS.
 
+### Showcase your work
+1. Go to [Github repo]("https://github.com/ketai/ketai.org/tree/master/content/05-exhibition").
+
+2. Make a pull request. 
+
+3. Add a folder with your project title in content/05-exhibition/(your unique folder name) 
+
+4. Include a .jpg thumbnail of your project in that folder with file named "thumbnail.jpg". The recommended file size is 800x600px
+
+5. Your markdown file should be formatted in following manner. 
+ 
+	---
+	title: Project Name
+
+	link: http://www.link-to-your-project.com
+
+	description: Text goes here
+	---
+
 ### Dependencies
 1. [Node.js](https://nodejs.org/)
 2. [npm](https://www.npmjs.com/) (Node Package Manager : Installed as a part of Node)
