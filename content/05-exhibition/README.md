@@ -7,15 +7,17 @@
 
 4. Include a .jpg thumbnail of your project in that folder with file named "thumbnail.jpg". The recommended file size is 800x600px
 
-5. Your markdown file should be formatted in following manner. 
+5. Your markdown file should be formatted in following manner (include *---*). 
  
-	---
-	title: Project Name
+*---*
 
-	link: http://www.link-to-your-project.com
+title: Project Name
 
-	description: Text goes here
-	---
+link: Link to your project
+
+description: Text goes here
+
+*---*
 
 
 <hr>
