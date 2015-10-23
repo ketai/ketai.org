@@ -10,15 +10,17 @@ The source of the ketai.org reference website built in [Woods]("https://github.c
 
 4. Include a .jpg thumbnail of your project in that folder with file named "thumbnail.jpg". The recommended file size is 800x600px
 
-5. Your markdown file should be formatted in following manner. 
+5. Your markdown file should be formatted in following manner (include *---*). 
  
-	---
-	title: Project Name
+*---*
 
-	link: Link to your project
+title: Project Name
 
-	description: Text goes here
-	---
+link: Link to your project
+
+description: Text goes here
+
+*---*
 
 ### Dependencies
 1. [Node.js](https://nodejs.org/)
