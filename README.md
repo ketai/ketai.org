@@ -14,7 +14,9 @@ The source of the ketai.org reference website built in [Woods]("https://github.c
  
 	---
 	title: Project Name
-	link: http://www.link-to-your-project.com
+
+	link: Link to your project
+
 	description: Text goes here
 	---
 
