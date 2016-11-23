@@ -12,7 +12,8 @@ The source of the ketai.org reference website built in [Woods]("https://github.c
 
 5. Your markdown file should be formatted in following manner (include *---*). 
  
-*---*
+```
+---
 
 title: Project Name
 
@@ -20,7 +21,8 @@ link: Link to your project
 
 description: Text goes here
 
-*---*
+---
+```
 
 ### Dependencies
 1. [Node.js](https://nodejs.org/)
