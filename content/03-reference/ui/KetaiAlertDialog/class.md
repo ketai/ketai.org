@@ -1,4 +1,4 @@
-####KetaiAlertDialog
+#### KetaiAlertDialog
 
 ##### `public class KetaiAlertDialog`
 

@@ -1,4 +1,4 @@
-####TextRecord
+#### TextRecord
 
 ##### `public class TextRecord implements ParsedNdefRecord`
 

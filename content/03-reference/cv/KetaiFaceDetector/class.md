@@ -1,4 +1,4 @@
-####KetaiFaceDetector
+#### KetaiFaceDetector
 
 ##### `public class KetaiFaceDetector`
 

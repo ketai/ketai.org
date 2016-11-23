@@ -1,9 +1,9 @@
 
-    ---
-    title: sensors
-    ---
-    #### sensors package.
+---
+title: sensors
+---
+#### sensors package.
 
 
-    Below you will find the classes contained within this one:
-    
+Below you will find the classes contained within this one:
+

@@ -1,4 +1,4 @@
-####KBluetoothConnection
+#### KBluetoothConnection
 
 ##### `public class KBluetoothConnection extends Thread`
 

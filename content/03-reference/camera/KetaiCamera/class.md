@@ -1,4 +1,4 @@
-####KetaiCamera
+#### KetaiCamera
 
 ##### `public class KetaiCamera extends PImage`
 

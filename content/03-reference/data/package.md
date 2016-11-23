@@ -1,9 +1,9 @@
 
-    ---
-    title: data
-    ---
-    #### data package.
+---
+title: data
+---
+#### data package.
 
 
-    Below you will find the classes contained within this one:
-    
+Below you will find the classes contained within this one:
+

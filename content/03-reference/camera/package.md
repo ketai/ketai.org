@@ -1,9 +1,9 @@
 
-    ---
-    title: camera
-    ---
-    #### camera package.
+---
+title: camera
+---
+#### camera package.
 
 
-    Below you will find the classes contained within this one:
-    
+Below you will find the classes contained within this one:
+

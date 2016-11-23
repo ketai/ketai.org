@@ -1,4 +1,4 @@
-####KetaiSimpleFace
+#### KetaiSimpleFace
 
 ##### `public class KetaiSimpleFace`
 

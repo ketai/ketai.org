@@ -1,4 +1,4 @@
-####SmartPoster
+#### SmartPoster
 
 ##### `public class SmartPoster implements ParsedNdefRecord`
 

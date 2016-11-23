@@ -1,4 +1,4 @@
-####KetaiSensor
+#### KetaiSensor
 
 ##### `public class KetaiSensor implements SensorEventListener`
 
