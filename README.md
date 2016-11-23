@@ -52,7 +52,8 @@ Open the terminal in OSX and enter the following command:
     woods
 *In case of an error, try adding "sudo" in front of the command to get administrator privileges
 Then point your browser to: 
-[http://localhost:3000/](http://localhost:3000/)
+
+`[http://localhost:3000/](http://localhost:3000/)`
 
 
 The directory to locate the files for Woods in OSX : /usr/local/lib/node_modules/woods
