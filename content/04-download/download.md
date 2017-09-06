@@ -15,7 +15,7 @@ To download and install the latest version for the library, follow the instructi
 
 <hr>
 
-#### [<i class="fa fa-download"></i> Manually Install v12 ](http://ketailibrary.org/ketai.zip)
+#### [<i class="fa fa-download"></i> Manually Install v14 ](http://ketailibrary.org/ketai.zip)
 1. Navigate to the Processing sketchbook folder.
 
 2. Go to libraries
