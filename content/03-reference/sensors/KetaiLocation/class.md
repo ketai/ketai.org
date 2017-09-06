@@ -4,9 +4,9 @@
 
 The KetaiLocation class provides android location services data to a sketch. 
 
-To receive location data a sketch can define the following method:<br /> <br /> 
+To receive location data a sketch can define the following method:<br> <br> 
 
-void onLocationEvent(Location l) : l is the raw android Location class<br /> void onLocationEvent(double lat, double lon) : lat, lon are the latitude & longitude in degrees<br /> void onLocationEvent(double lat, double lon, double alt) : lat, lon are the latitude & longitude in degrees, alt is altitude in meters<br /> void onLocationEvent(double lat, double lon, double alt. float acc) : lat, lon are the latitude & longitude in degrees, alt is altitude in meters, acc is the accuracy in meters<br />
+void onLocationEvent(Location l) : l is the raw android Location class<br> void onLocationEvent(double lat, double lon) : lat, lon are the latitude & longitude in degrees<br /> void onLocationEvent(double lat, double lon, double alt) : lat, lon are the latitude & longitude in degrees, alt is altitude in meters<br> void onLocationEvent(double lat, double lon, double alt. float acc) : lat, lon are the latitude & longitude in degrees, alt is altitude in meters, acc is the accuracy in meters<br>
 
 ##### `private LocationManager locationManager = null`
 
@@ -20,7 +20,7 @@ The parent.
 
 The on location event method4arg.
 
-##### `private String provider`
+##### `private String provider = "none"`
 
 The provider.
 
@@ -67,6 +67,10 @@ Gets the last location.
 Checks if started.
 
  * **Returns:** true, if started
+
+##### `public void onPermissionResult(boolean granted)`
+
+Handle permission request result
 
 ##### `public void start()`
 

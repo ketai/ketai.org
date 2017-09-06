@@ -12,7 +12,7 @@ The camera.
 
 The my pixels.
 
-##### `protected Method onPreviewEventMethod, onPreviewEventMethodPImage,    onSavePhotoEventMethod, onFaceDetectionEventMethod`
+##### `protected Method onPreviewEventMethod, onPreviewEventMethodPImage, onSavePhotoEventMethod,    onFaceDetectionEventMethod`
 
 The on face detection event method.
 
@@ -24,7 +24,7 @@ The camera id.
 
 The photo height.
 
-##### `public boolean isStarted, requestedStart, enableFlash,    isRGBPreviewSupported`
+##### `public boolean isStarted, requestedStart, enableFlash, isRGBPreviewSupported`
 
 The is rgb preview supported.
 
@@ -52,7 +52,7 @@ The supports face detection.
 
 The m texture.
 
-##### `public KetaiCamera(PApplet pParent, int _width, int _height,    int _framesPerSecond)`
+##### `public KetaiCamera(PApplet pParent, int _width, int _height, int _framesPerSecond)`
 
 Instantiates a new ketai camera. 
 
@@ -243,9 +243,9 @@ Gets the number of cameras.
 
 List available cameras.
 
- * **Returns:** the collection<? extends string>
+ * **Returns:** the collection<string>
 
-##### `private void determineCameraParameters()`
+##### `@SuppressWarnings("deprecation")  private void determineCameraParameters()`
 
 Determine camera parameters based on requested parameters. Tries to get the closest resolution settings.
 

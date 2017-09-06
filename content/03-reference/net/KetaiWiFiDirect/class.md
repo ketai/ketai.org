@@ -42,6 +42,10 @@ Instantiates a new ketai wi fi direct object
 
  * **Parameters:** `_parent` — the calling sketch/Activity/PApplet
 
+##### `private void initIntentFilter()`
+
+Initializes the intent filter
+
 ##### `public void setIsWifiP2pEnabled(boolean isWifiP2pEnabled)`
 
 Sets the checks if wifi p2p enabled.
@@ -73,8 +77,6 @@ Cancel disconnect.
 ##### `public void getConnectionInfo()`
 
 Gets the connection information.
-
- * **Returns:** the connection info
 
 ##### `public String getIPAddress()`
 

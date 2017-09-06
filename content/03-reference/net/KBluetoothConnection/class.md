@@ -4,15 +4,15 @@
 
 The Class KBluetoothConnection.
 
-##### `private final BluetoothSocket mmSocket`
+##### `private BluetoothSocket mmSocket`
 
 The mm socket.
 
-##### `private final InputStream mmInStream`
+##### `private InputStream mmInStream`
 
 The mm in stream.
 
-##### `private final OutputStream mmOutStream`
+##### `private OutputStream mmOutStream`
 
 The mm out stream.
 
@@ -30,11 +30,13 @@ The btm.
 
 ##### `public KBluetoothConnection(KetaiBluetooth _btm, BluetoothSocket socket)`
 
-Instantiates a new bluetooth connection.
+Instantiates a new bluetooth connection. 
+
+the Bluetooth managing class the socket reference for the connection
 
  * **Parameters:**
-   * `_btm` — the Bluetooth managing class
-   * `socket` — the socket reference for the connection
+   * `_btm` — 
+   * `socket` — 
 
 ##### `public String getAddress()`
 
@@ -56,9 +58,11 @@ Checks if we are connected.
 
 ##### `public void write(byte[] buffer)`
 
-Write data to the connection
+Write data to the connection 
 
- * **Parameters:** `buffer` — the buffer
+the buffer
+
+ * **Parameters:** `buffer` — 
 
 ##### `public void cancel()`
 

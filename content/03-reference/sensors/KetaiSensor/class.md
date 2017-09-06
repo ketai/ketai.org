@@ -18,6 +18,10 @@ The is registered.
 
 The parent.
 
+##### `private SensorQueue eventQueue`
+
+The event queue.
+
 ##### `private Method onSensorEventMethod`
 
 The on sensor event method.
@@ -41,6 +45,10 @@ The time of last update.
 ##### `final static String SERVICE_DESCRIPTION = "Android Sensors."`
 
 The Constant SERVICE_DESCRIPTION.
+
+##### `private float[] rotationMat`
+
+Utility arrays used in the getOrientation() method.
 
 ##### `public KetaiSensor(PApplet pParent)`
 
@@ -71,6 +79,14 @@ Sets the delay interval.
 the new delay interval
 
  * **Parameters:** `pDelayInterval` — 
+
+##### `public void setSamplingRate(int pSamplingInterval)`
+
+Sets the delay interval. 
+
+the new sampling interval. Can be one of SENSOR_DELAY_NORMAL, SENSOR_DELAY_UI, SENSOR_DELAY_GAME, SENSOR_DELAY_FASTEST or the delay in microseconds.
+
+ * **Parameters:** `pSamplingInterval` — 
 
 ##### `public void enableAccelerometer()`
 
@@ -244,7 +260,7 @@ Checks if is magentic field available.
 
  * **Returns:** true, if is magentic field available
 
-##### `public boolean isOrientationAvailable()`
+##### `@SuppressWarnings("deprecation")  public boolean isOrientationAvailable()`
 
 Checks if is orientation available.
 
@@ -268,7 +284,7 @@ Checks if is pressure available.
 
  * **Returns:** true, if is pressure available
 
-##### `public boolean isTemperatureAvailable()`
+##### `@SuppressWarnings("deprecation")  public boolean isTemperatureAvailable()`
 
 Checks if is temperature available.
 
@@ -334,7 +350,7 @@ Checks if is started.
 
  * **Returns:** true, if is started
 
-##### `public void start()`
+##### `@SuppressWarnings("deprecation")  public void start()`
 
 Start services.
 
@@ -402,3 +418,12 @@ the q the rv
 Gets the orientation.
 
  * **Returns:** the orientation
+
+##### `public float[] getOrientation(float[] v)`
+
+Gets the orientation. 
+
+the vector to hold the orientation values
+
+ * **Parameters:** `v` — 
+ * **Returns:** the orientation vector
