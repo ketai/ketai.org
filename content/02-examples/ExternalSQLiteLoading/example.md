@@ -1,9 +1,9 @@
 ---
-title: External SQLite Loading
+title: External SQLite Tables
 excerpt: This example illustrates how to load a pre-built database file so that it may be used in an android sketch.  
 date: 02/01/2015
 ---
-#### External SQLite Loading
+#### External SQLite Tables
 
 This example illustrates how to load a pre-built database file so that it may be used in an android sketch.  
 

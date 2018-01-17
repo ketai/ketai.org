@@ -3,7 +3,7 @@ title: Get Started
 ---
 
 #### What You Need
-To use the library for Processing, make sure your setup meets the following minimum requirements:- <br>
+To use the library for Processing, make sure your setup meets the following minimum requirements: <br>
 <!-- <h4> -->
 <div class="sidelist">
 <ul>
@@ -32,7 +32,7 @@ The newer versions of the requirements will be fine.
 
 4. In Processing IDE, choose "Add mode" from the menu to install Android mode.
 
-5. Android OS might sometimes have dependecies specific to your system setup. To install Windows USB Driver, **[click here](http://developer.android.com/tools/extras/oem-usb.html)**. To setup your device for Linux, follow the instructions **[here](http://developer.android.com/tools/device.html#setting-up).**
+5. Android OS might sometimes have dependecies specific to your system setup. To install the Windows USB Driver, **[click here](http://developer.android.com/tools/extras/oem-usb.html)**. To setup your device for Linux, follow the instructions **[here](http://developer.android.com/tools/device.html#setting-up).**
 
 <hr>
 ####  Write your first sketch
@@ -47,9 +47,9 @@ The newer versions of the requirements will be fine.
 		        ellipse(mouseX, mouseY, mouseX-pmouseX, mouseY-pmouseY);
 		}
 
-3. Put your Android device in "USB Debugging" via "Developer options"
+3. Put your Android device in "USB Debugging" mode via "Developer options"
 
-4. Plug your device into your Desktop and run the sketch from Processing. Your sketch should run on the Android Device.
+4. Plug your device into your computer and run the sketch from Processing. Your sketch should run on the Android Device.
 
 <hr>
 #### Documentation
