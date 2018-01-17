@@ -7,7 +7,7 @@ date: 02/01/2015
 
 Available sensors/methods 
   
-    void onSensorEvent(SensorEvent e) - raw android sensor event 
+    void onSensorEvent(SensorEvent e): raw android sensor event 
 
     void onAccelerometerEvent(float x, float y, float z, long a, int b): x,y,z force in m/s^2, a=timestamp(nanos), b=accuracy
 

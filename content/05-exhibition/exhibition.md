@@ -2,7 +2,7 @@
 title: Exhibition
 ---
 #### Showcase your work
-1. Go to [Github repo]("https://github.com/ketai/ketai.org/tree/master/content/05-exhibition").
+1. Go to [Github repo](https://github.com/ketai/ketai.org/tree/master/content/05-exhibition).
 
 2. Make a pull request. 
 

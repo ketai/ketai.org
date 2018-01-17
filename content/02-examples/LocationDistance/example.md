@@ -6,7 +6,7 @@ date: 02/01/2015
 #### Location Distance
 
 KetaiLocation Features<br>
-&nbsp;- Uses GPS location data (latitude, longitude, altitude (if available)<br>
+&nbsp;- Uses GPS location data (latitude, longitude, altitude (if available))<br>
 &nbsp;- Updates if location changes by 1 meter, or every 10 seconds<br>
 &nbsp;- If unavailable, defaults to system provider (cell tower or WiFi network location)
 
