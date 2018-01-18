@@ -51,10 +51,3 @@ The newer versions of the requirements will be fine.
 
 4. Plug your device into your computer and run the sketch from Processing. Your sketch should run on the Android Device.
 
-<hr>
-#### Documentation
-The following book includes a comprehensive introduction to the ke:tai library with more than 40 projects.
-
-The book comes with project source code, and is available at the **[The Pragmatic Bookshelf](https://pragprog.com/book/dsproc/rapid-android-development)**
-
-![Rapid Android Development](image.jpg)
