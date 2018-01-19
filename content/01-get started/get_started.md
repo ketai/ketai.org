@@ -51,3 +51,14 @@ The newer versions of the requirements will be fine.
 
 4. Plug your device into your computer and run the sketch from Processing. Your sketch should run on the Android Device.
 
+<hr>
+####  Look over the RAD example code
+1. Go to the **[repository](https://github.com/ketai/rapid-android-development)**.
+
+2. Clone or download a zip of the examples.
+
+3. Open up the enclosed .pde files from within Processing.
+
+4. Make sure you are in "Android Mode" and sucessfully completed all the steps above.
+
+5. Run the program as you would a normal sketch.
