@@ -3,7 +3,7 @@ title: Get Started
 ---
 
 #### What You Need
-To use the library for Processing, make sure your setup meets the following minimum requirements: <br>
+To use ketai, make sure you have the following (or newer) software installed: <br>
 <!-- <h4> -->
 <div class="sidelist">
 <ul>
@@ -19,8 +19,7 @@ To use the library for Processing, make sure your setup meets the following mini
 </ul>
 </div>
 
-<!-- </h4> -->
-The newer versions of the requirements will be fine. 
+
 
 <hr>
 #### Steps
