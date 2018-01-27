@@ -15,7 +15,7 @@ To download and install the latest version for the library, follow the instructi
 
 <hr>
 
-#### [<i class="fa fa-download"></i> Manually Install v14 ](http://ketailibrary.org/ketai.zip)
+#### [<i class="fa fa-download"></i> Manually Install the Latest Version ](http://ketailibrary.org/ketai.zip)
 1. Navigate to the Processing sketchbook folder.
 
 2. Go to libraries
@@ -40,6 +40,19 @@ To download and install the latest version for the library, follow the instructi
 <hr>
 
 ## Revisions
+
+#### v14 updates
+------------
+Test Platforms: Android 4.4.2
+Test Hardware: Nexus 4, LG Optimus Exceed 2
+
+#### v13 updates
+------------
+Test Platforms: Android 4.4.2, Android 5.1.1
+Test Hardware: Nexus 7, Galaxy 3s, Nexus 6
+- Fixes getOrientation()
+- Request permission in AudioInput, Camera, and Location
+- Compatible with version 4 of the mode
 
 #### v12 updates
 ------------
