@@ -45,6 +45,7 @@ To download and install the latest version for the library, follow the instructi
 ------------
 Test Platforms: Android 4.4.2
 Test Hardware: Nexus 4, LG Optimus Exceed 2
+- Major revision for Processing Android Mode 4.0
 
 #### v13 updates
 ------------
